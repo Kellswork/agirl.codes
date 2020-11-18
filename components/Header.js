@@ -23,7 +23,7 @@ export default function Header() {
       <header className="header">
         <HeaderCard className="header-card">
           <div className="card-image">
-            <img src="/blog-image.jpg" alt="blog image" width="200px" height='180px' />
+            <img src="/blog-image.jpg" alt="blog image" width="200px" />
           </div>
           <div className="card-body">
             <div className="card-icons">

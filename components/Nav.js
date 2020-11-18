@@ -16,7 +16,7 @@ const NavContainer = styled.nav`
 `
 export default function Nav() {
   return (
-      <NavContainer className='nav'>
+      <NavContainer>
         <div className="logo">
           <img src="/logo.png" alt="logo" />
         </div>

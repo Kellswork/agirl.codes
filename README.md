@@ -1,4 +1,3 @@
 # Agirl.codes
 
-###  Personal Blog
-
+## Personal Blog
