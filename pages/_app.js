@@ -1,5 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
+import './_app.css'
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
