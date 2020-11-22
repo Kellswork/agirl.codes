@@ -53,9 +53,9 @@ const HeaderCard = styled.div`
   .card-image {
     img {
       width: 100px;
-      height: 97px;
+      height: 98px;
       border-radius: 50%;
-      border: 2px solid black;
+      border: 2px solid rgba(0,0,0,0.2);
     }
   }
 `;

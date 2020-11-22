@@ -4,11 +4,11 @@ import styled from "styled-components";
 const DivList = styled.div`
   border-radius: 4px;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 10px 10px 10px 30px;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  /* --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
 `;
 const PostTitle = styled.a`
   font-size: 1.87rem;
@@ -16,6 +16,7 @@ const PostTitle = styled.a`
   font-weight: 700;
   padding-bottom: 10px;
   display: inline-block;
+  padding-left: 8px;
   color: #4a5568;
   cursor: pointer;
   text-transform: capitalize;
@@ -40,7 +41,10 @@ const PostDate = styled.span`
 const PostText = styled.p`
   color: #2d3748;
   line-height: 1.3;
-  padding: 8px;
+  padding: 8px 8px 26px 8px;
+  border-bottom: 2px solid;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgba(243, 244, 246, var(--tw-border-opacity));
 `;
 const PostData = styled.div`
   margin-bottom: 12px;

@@ -2,12 +2,12 @@ import Head from "next/head";
 import Header from "./Header";
 import styled from "styled-components";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 const LayoutContainer = styled.div`
   max-width: 1024px;
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
-  margin-bottom: 10%;
   .layout-content {
     display: flex;
     justify-content: space-around;
@@ -17,7 +17,7 @@ const LayoutContainer = styled.div`
       flex-direction: column-reverse;
     }
     .post-content {
-      margin-bottom: 10%;
+      margin-bottom: 8%;
       @media (max-width: 640px) {
         margin-bottom: 0%;
       }
@@ -28,22 +28,20 @@ const LayoutContainer = styled.div`
     box-sizing: border-box;
     padding-left: 20px;
   }
-  footer {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #a88ee3;
-    background: #f3f4f6;
-    border-radius: 2px;
-  }
 `;
 
 export default function Layout({ children, pageTitle, ...props }) {
   return (
+    <>
     <LayoutContainer>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/favicon-96x96.png"
+        ></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
@@ -58,7 +56,8 @@ export default function Layout({ children, pageTitle, ...props }) {
           <div className="content">{children}</div>
         </section>
       </div>
-      <footer>Built with next.js 💜</footer>
     </LayoutContainer>
+    <Footer />
+    </>
   );
 }
