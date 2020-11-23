@@ -16,7 +16,7 @@ const LayoutContainer = styled.div`
     @media (max-width: 640px) {
       flex-direction: column-reverse;
       margin-left: 0px;
-    margin-right: 0px;
+      margin-right: 0px;
     }
     .post-content {
       margin-bottom: 8%;
@@ -32,7 +32,12 @@ const LayoutContainer = styled.div`
   }
 `;
 
-export default function Layout({ children, pageTitle, ...props }) {
+export default function Layout({
+  children,
+  pageTitle,
+  pageDescription,
+  ...props
+}) {
   return (
     <>
       <LayoutContainer>
@@ -55,7 +60,16 @@ export default function Layout({ children, pageTitle, ...props }) {
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-QZXMHMEZWE" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`,
             }}
           />
-
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={pageDescription} />
+          <meta property="og:url" content="agirl.codes" />
+          <meta name="description" content={pageDescription}></meta>
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content={pageDescription} />
+          <meta name="twitter:title" content={pageTitle} />
+          <meta name="twitter:site" content="@kelly_perrie" />
+          <meta name="twitter:creator" content="@kelly_perrie" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
             rel="icon"

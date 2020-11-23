@@ -10,7 +10,7 @@ const Title = styled.h1`
 
 export default function Home({ posts, title, description, ...props }) {
   return (
-    <Layout pageTitle={title}>
+    <Layout pageTitle={title} pageDescription={description}>
       <main>
         <PostList posts={posts} />
       </main>
