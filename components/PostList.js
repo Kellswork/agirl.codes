@@ -17,6 +17,9 @@ const PostTitle = styled.a`
   color: #4a5568;
   cursor: pointer;
   text-transform: capitalize;
+  @media (max-width: 760px) {
+      font-size: 1.5rem;
+    }
 `;
 export const PostTag = styled.span`
   padding: 4px 6px;

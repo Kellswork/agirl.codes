@@ -15,6 +15,8 @@ const LayoutContainer = styled.div`
     margin-right: 30px;
     @media (max-width: 640px) {
       flex-direction: column-reverse;
+      margin-left: 0px;
+    margin-right: 0px;
     }
     .post-content {
       margin-bottom: 8%;
