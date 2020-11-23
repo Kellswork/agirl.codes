@@ -60,9 +60,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           src="https://www.googletagmanager.com/gtag/js?id=G-QZXMHMEZWE"
         ></script>
         <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-QZXMHMEZWE');
+         
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
