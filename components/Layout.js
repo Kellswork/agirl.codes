@@ -60,6 +60,7 @@ export default function Layout({
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-QZXMHMEZWE" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`,
             }}
           />
+          <meta name="google-site-verification" content="V30u2_77VrbrBBTRxneUbIN-QZzZKLT8Q-p_1xCvBSk" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={pageTitle} />
           <meta property="og:description" content={pageDescription} />
