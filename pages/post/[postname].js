@@ -56,13 +56,28 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
         <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-QZXMHMEZWE"
-        ></script>
-        <script>
-         
-        </script>
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-XXXXXX');`,
+          }}
+        />
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-QZXMHMEZWE" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`,
+          }}
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:url"
+          content={`https://agirl.codes/post/How-to-Build-Forms-with-multiple-input-fields-using-React-Hooks`}
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={`${frontmatter.title}`} />
+        <meta property="og:description" content={frontmatter.description} />
+        <meta name="description" content={frontmatter.description}></meta>
         <link
           rel="icon"
           type="image/png"
@@ -74,7 +89,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           rel="stylesheet"
         ></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-        <title>agirl.codes/{frontmatter.title}</title>
+        <title>{frontmatter.title}</title>
       </Head>
 
       <Nav />
