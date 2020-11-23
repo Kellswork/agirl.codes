@@ -67,6 +67,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           rel="stylesheet"
         ></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <title>agirl.codes/{frontmatter.title}</title>
       </Head>
       <Nav />
       <article>

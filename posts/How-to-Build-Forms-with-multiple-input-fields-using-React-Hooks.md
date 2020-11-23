@@ -11,7 +11,7 @@ Forms can be considered as the backbone of web applications. How would you get a
 
 ### Controlled and uncontrolled input
 
-The default action for a HTML form is to have the page refreshed which causes you to lose all your data. With react we can, we use javascript to handle the way we get access to the data entered by the users.
+The default action for an HTML form is to have the page refreshed which causes you to lose all your data. With react we can, we use javascript to handle the way we get access to the data entered by the users.
 
 In HTML, form types such as `<input> <textarea>` generally handle their own state and update based on user input. letting the DOM handle user input for you is referred to as `uncontrolled input`
 
