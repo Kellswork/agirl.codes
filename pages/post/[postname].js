@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Nav from "../../components/Nav";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { duotoneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { PostDiv } from "../styled/postDiv";
+import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
 
 const MainDiv = styled.div`
