@@ -1,10 +1,9 @@
 const fs = require('fs');
 
 const globby = require('globby');
-const prettier = require('prettier');
 
 (async () => {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
+//   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
 
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
   const pages = await globby([
@@ -34,10 +33,10 @@ const prettier = require('prettier');
     `;
 
   // If you're not using Prettier, you can remove this.
-  const formatted = prettier.format(sitemap, {
-    ...prettierConfig,
-    parser: 'html'
-  });
+//   const formatted = prettier.format(sitemap, {
+//     ...prettierConfig,
+//     parser: 'html'
+//   });
 
-  fs.writeFileSync('public/sitemap.xml', formatted);
+  fs.writeFileSync('public/sitemap.xml');
 })();
