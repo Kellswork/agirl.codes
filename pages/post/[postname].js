@@ -55,6 +55,15 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QZXMHMEZWE"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-QZXMHMEZWE');
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
@@ -69,6 +78,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <title>agirl.codes/{frontmatter.title}</title>
       </Head>
+
       <Nav />
       <article>
         <div>

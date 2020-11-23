@@ -33,31 +33,40 @@ const LayoutContainer = styled.div`
 export default function Layout({ children, pageTitle, ...props }) {
   return (
     <>
-    <LayoutContainer>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/favicon-96x96.png"
-        ></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        ></link>
-        <title>{pageTitle}</title>
-      </Head>
-      <Nav />
-      <div className="layout-content">
-        <Header />
-        <section className="post-content">
-          <div className="content">{children}</div>
-        </section>
-      </div>
-    </LayoutContainer>
-    <Footer />
+      <LayoutContainer>
+        <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QZXMHMEZWE"
+          ></script>
+          <script>
+            window.dataLayer = window.dataLayer || []; function gtag()
+            {dataLayer.push(arguments)}
+            gtag('js', new Date()); gtag('config', 'G-QZXMHMEZWE');
+          </script>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/favicon-96x96.png"
+          ></link>
+          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+          ></link>
+          <title>{pageTitle}</title>
+        </Head>
+        <Nav />
+        <div className="layout-content">
+          <Header />
+          <section className="post-content">
+            <div className="content">{children}</div>
+          </section>
+        </div>
+      </LayoutContainer>
+      <Footer />
     </>
   );
 }
