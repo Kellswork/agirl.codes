@@ -6,9 +6,6 @@ const DivList = styled.div`
   padding-left: 20px;
   margin-bottom: 10px;
   padding: 10px 10px 10px 30px;
-  /* --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
 `;
 const PostTitle = styled.a`
   font-size: 1.87rem;
@@ -21,7 +18,7 @@ const PostTitle = styled.a`
   cursor: pointer;
   text-transform: capitalize;
 `;
-const PostTag = styled.span`
+export const PostTag = styled.span`
   padding: 4px 6px;
   background: #7f5bd5b0;
   border-radius: 10px;

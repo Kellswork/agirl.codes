@@ -7,6 +7,31 @@ import Nav from "../../components/Nav";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { duotoneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { PostDiv } from "../styled/postDiv";
+import { PostTag } from "../../components/PostList";
+
+const MainDiv = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 5%;
+
+  h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 760px;
+    color: #4a5568;
+    font-weight: 600;
+    margin: 0 auto;
+    line-height: 1.2;
+    padding-bottom: 26px;
+    @media (max-width: 760px) {
+      font-size: 1.8rem;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+`;
 
 const renderers = {
   code: ({ language, value }) => {
@@ -15,7 +40,10 @@ const renderers = {
         style={duotoneDark}
         language={language}
         children={value}
-        customStyle={{borderRadius:'4px', fontFamily:`"Work Sans", sans-serif`}}
+        customStyle={{
+          borderRadius: "4px",
+          fontFamily: `"Work Sans", sans-serif`,
+        }}
       />
     );
   },
@@ -23,32 +51,6 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
-  const MainDiv = styled.div`
-    max-width: 1024px;
-    margin: 0 auto;
-    font-family: "Work Sans", sans-serif;
-    margin-bottom: 5%;
-
-    h1 {
-      font-size: 2.25rem;
-      text-align: center;
-      box-sizing: border-box;
-      max-width: 760px;
-      color: #4a5568;
-      font-weight: 600;
-      margin: 0 auto;
-      line-height: 1.2;
-      padding-bottom: 26px;
-      @media (max-width: 760px) {
-        font-size: 1.8rem;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-      /* border-bottom: 2px solid; */
-      /* --tw-border-opacity: 1; */
-      /* border-bottom-color: rgba(243,244,246,var(--tw-border-opacity)); */
-    }
-  `;
 
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
@@ -74,6 +76,9 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
             <aside className="sidebar-container">
               <div className="sidebar-content">
                 <p>{frontmatter.fullDate}</p>
+                <p>
+                  <PostTag>{frontmatter.tags}</PostTag>
+                </p>
                 <Link href="/">
                   <p className="sidebar-backlink">
                     <img src="/back-arrow-1767531.svg" alt="back arrow" />

@@ -93,5 +93,12 @@ export const PostDiv = styled.div`
       opacity: 0.9;
       text-decoration: none;
     }
+    blockquote,
+    q {
+      quotes: none;
+      background: #f9fafb;
+      border-left: 2px solid #93f;
+      padding-left: 10px;
+    }
   }
 `;

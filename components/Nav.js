@@ -28,6 +28,7 @@ const NavContainer = styled.nav`
     text-align: center;
     img {
       width:180px;
+      cursor: pointer;
     }
   }
   @media (max-width: 640px) {
@@ -202,12 +203,7 @@ export default function Nav() {
                 <li>
                   <a href="/">Home</a>
                 </li>
-                <li>
-                  <a href="#">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#">Subscribe</a>
-                </li>
+              
               </ul>
             </div>
           </div>
