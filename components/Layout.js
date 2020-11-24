@@ -29,7 +29,7 @@ const LayoutContainer = styled.div`
     max-width: 768px;
     box-sizing: border-box;
     padding-left: 20px;
-    @media (max-width: 460px) {
+    @media (max-width: 640px) {
       padding-left: 0px;
     }
   }

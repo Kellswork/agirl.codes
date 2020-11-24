@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const DivList = styled.div`
   border-radius: 4px;
-  padding-left: 20px;
   margin-bottom: 10px;
-  padding: 10px 10px 10px 30px;
-  @media (max-width: 460px) {
+  padding: 10px 10px 10px 20px;
+  @media (max-width: 640px) {
     padding: 0;
     width: 94%;
     margin: 0 auto;
@@ -24,6 +23,9 @@ const PostTitle = styled.a`
   text-transform: capitalize;
   @media (max-width: 760px) {
       font-size: 1.5rem;
+    }
+    @media ( max-width: 540px) {
+      font-size: 1.2rem;
     }
 `;
 export const PostTag = styled.span`
