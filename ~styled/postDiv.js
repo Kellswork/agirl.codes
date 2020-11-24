@@ -8,11 +8,8 @@ export const PostDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .markdown-content {
-      width: 90%;
-      overflow-x: scroll;
-    }
   }
+
   .sidebar-container {
     width: 25%;
     max-width: 250px;
@@ -53,6 +50,15 @@ export const PostDiv = styled.div`
     color: #374252;
     line-height: 28px;
     list-style: circle;
+    @media (max-width: 1040px) {
+      width: 90%;
+      overflow-x: scroll;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 0px;
+      padding: 8px 16px 16px 16px;
+    }
 
     h3 {
       font-size: 1.5rem;

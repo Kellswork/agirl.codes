@@ -6,6 +6,11 @@ const DivList = styled.div`
   padding-left: 20px;
   margin-bottom: 10px;
   padding: 10px 10px 10px 30px;
+  @media (max-width: 460px) {
+    padding: 0;
+    width: 94%;
+    margin: 0 auto;
+  }
 `;
 const PostTitle = styled.a`
   font-size: 1.87rem;
