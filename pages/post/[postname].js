@@ -3,8 +3,9 @@ import Head from "next/head";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
-import Nav from "../../components/Nav";
+import HyvorTalk from "hyvor-talk-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import Nav from "../../components/Nav";
 import { duotoneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
@@ -31,7 +32,24 @@ const MainDiv = styled.div`
       padding-right: 5px;
     }
   }
+  .comment-section {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    max-width: 760px;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin-left: 27%;
+    @media (max-width: 1024px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (max-width: 640px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 `;
+
 
 const renderers = {
   code: ({ language, value }) => {
@@ -51,6 +69,7 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
+  const blogPostTitle = frontmatter.title.split(" ").join("-");
 
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
@@ -72,7 +91,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:url"
-          content="https://agirl.codes/post/How-to-Build-Forms-with-multiple-input-fields-using-React-Hooks"
+          content="https://agirl.codes/post/${blogPostTitle}"
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={`${frontmatter.title}`} />
@@ -102,6 +121,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       <article>
         <div>
           <h1>{frontmatter.title}</h1>
+          <div className="comment-count-view">{/* Comment Counts */}</div>
           <PostDiv>
             <aside className="sidebar-container">
               <div className="sidebar-content">
@@ -121,6 +141,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
               <ReactMarkdown renderers={renderers} source={markdownBody} />
             </div>
           </PostDiv>
+          {/* Load Comments now */}
+          <div className="comment-section">
+            <HyvorTalk.Embed websiteId={2556} id={blogPostTitle} />
+          </div>
         </div>
       </article>
     </MainDiv>

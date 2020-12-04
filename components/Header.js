@@ -23,10 +23,9 @@ const HeaderCard = styled.div`
     }
   }
   @media (max-width: 640px) {
-     margin: 0 auto;
-     margin-bottom: 30px;
-      
-}
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
   .card-body {
     .card-name {
       font-size: 1.125rem;
@@ -55,7 +54,7 @@ const HeaderCard = styled.div`
       width: 100px;
       height: 98px;
       border-radius: 50%;
-      border: 2px solid rgba(0,0,0,0.2);
+      border: 2px solid rgba(0, 0, 0, 0.2);
     }
   }
 `;
@@ -70,18 +69,15 @@ export default function Header() {
           </div>
           <div className="card-body">
             <h3 className="card-name">Kelechi Ogbonna</h3>
-            <h3 className="card-occupation">SOFTWARE ENGINEER</h3>
+            <h3 className="card-occupation">SOFTWARE DEVELOPER</h3>
             <div className="card-text">
               <p>
-                Welcome to my little corner of the web where I share info on
-                frontend techies...
+                Welcome to my little corner of the web where I share articles on
+                frotend/fullstack development.
               </p>
             </div>
             <div className="card-icons">
-              <Link
-                href="https://www.linkedin.com/in/kelechi-ogbonna/"
-                
-              >
+              <Link href="https://www.linkedin.com/in/kelechi-ogbonna/">
                 <img src="/linkedin.svg" alt="linkedin icon" />
               </Link>
               <Link href="https://github.com/Kellswork">
