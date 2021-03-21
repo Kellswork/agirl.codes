@@ -3,7 +3,6 @@ import Head from "next/head";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
-import HyvorTalk from "hyvor-talk-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import Nav from "../../components/Nav";
 import { duotoneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -141,10 +140,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
               <ReactMarkdown renderers={renderers} source={markdownBody} />
             </div>
           </PostDiv>
-          {/* Load Comments now */}
-          <div className="comment-section">
-            <HyvorTalk.Embed websiteId={2556} id={blogPostTitle} />
-          </div>
         </div>
       </article>
     </MainDiv>
