@@ -5,27 +5,32 @@ import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import Nav from "../../components/Nav";
-import { duotoneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { duotoneForest } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
+import { duotoneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const MainDiv = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 5%;
 
   h1 {
     font-size: 2.25rem;
-    text-align: center;
+    margin-left: 27%;
     box-sizing: border-box;
     max-width: 760px;
     color: #4a5568;
     font-weight: 600;
-    margin: 0 auto;
     line-height: 1.2;
-    padding-bottom: 26px;
+    padding-bottom: 16px;
+    @media (max-width: 1046px) {
+      margin: 0 auto;
+      text-align: center;
+    }
     @media (max-width: 760px) {
+      margin: 0 auto;
       font-size: 1.8rem;
       padding-left: 5px;
       padding-right: 5px;
@@ -33,7 +38,7 @@ const MainDiv = styled.div`
   }
   .comment-section {
     box-sizing: border-box;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     max-width: 760px;
     --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
       0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -49,17 +54,16 @@ const MainDiv = styled.div`
   }
 `;
 
-
 const renderers = {
   code: ({ language, value }) => {
     return (
       <SyntaxHighlighter
-        style={duotoneDark}
+        style={duotoneLight}
         language={language}
         children={value}
         customStyle={{
-          borderRadius: "4px",
-          fontFamily: `"Work Sans", sans-serif`,
+          borderRadius: "8px",
+          fontFamily: `"Raleway", sans-serif`,
         }}
       />
     );
@@ -108,11 +112,11 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           sizes="96x96"
           href="/favicon-96x96.png"
         ></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
           rel="stylesheet"
         ></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <title>{frontmatter.title}</title>
       </Head>
 

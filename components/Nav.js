@@ -4,8 +4,6 @@ import styled from "styled-components";
 const NavContainer = styled.nav`
   max-width: 1024px;
   margin: 0 auto;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 4vh;
   .nav-content {
     display: flex;

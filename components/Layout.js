@@ -7,7 +7,7 @@ import Footer from "./Footer";
 const LayoutContainer = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   .layout-content {
     display: flex;
     justify-content: space-around;
@@ -59,7 +59,10 @@ export default function Layout({
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-QZXMHMEZWE" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`,
             }}
           />
-          <meta name="google-site-verification" content="V30u2_77VrbrBBTRxneUbIN-QZzZKLT8Q-p_1xCvBSk" />
+          <meta
+            name="google-site-verification"
+            content="V30u2_77VrbrBBTRxneUbIN-QZzZKLT8Q-p_1xCvBSk"
+          />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={pageTitle} />
           <meta property="og:description" content={pageDescription} />
@@ -79,7 +82,7 @@ export default function Layout({
           ></link>
           <link rel="preconnect" href="https://fonts.gstatic.com"></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
             rel="stylesheet"
           ></link>
           <title>{pageTitle}</title>
