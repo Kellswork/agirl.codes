@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import Nav from "../../components/Nav";
-import { duotoneForest } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
 import { duotoneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
