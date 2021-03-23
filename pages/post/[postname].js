@@ -99,7 +99,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           content="https://agirl.codes/post/${blogPostTitle}"
         />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={`${frontmatter.title}`} />
+        <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />
         <meta property="og:image" content={frontmatter.image} />
         <meta name="description" content={frontmatter.description}></meta>
