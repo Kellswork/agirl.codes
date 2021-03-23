@@ -4,6 +4,7 @@ date: 21-03-2021
 fullDate: Sunday, 21 March 2021
 tags: JavaScript
 description: 'In this article, I will be sharing different ways to check if an object is empty in JavaScript.'
+image: '/posts-images/social-media-header.jpg'
 ---
 
 
