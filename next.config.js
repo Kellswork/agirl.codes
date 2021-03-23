@@ -7,6 +7,7 @@ module.exports = {
     config.module.rules.push({
       test: /\.md$/,
       use: "raw-loader",
+      images: '/posts-images/social-media-header.jpg',
     });
 
     return config;
