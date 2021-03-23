@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Head from "next/head";
-import Image from 'next/image'
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
