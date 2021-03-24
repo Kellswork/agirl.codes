@@ -3,11 +3,14 @@ import styled from "styled-components";
 
 const NavContainer = styled.nav`
   max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 4vh;
   .nav-content {
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .menu {
@@ -22,14 +25,12 @@ const NavContainer = styled.nav`
     }
   }
   .logo {
-    width: 260px;
-    text-align: center;
+    /* width: 260px;
+    text-align: center; */
     img {
       width:180px;
       cursor: pointer;
     }
-  }
-  @media (max-width: 640px) {
   }
 `;
 const MenuArea = styled.div`

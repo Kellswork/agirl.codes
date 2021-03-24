@@ -6,7 +6,6 @@ const DivList = styled.div`
   margin-bottom: 10px;
   padding: 10px 10px 10px 20px;
   @media (max-width: 640px) {
-    padding: 0;
     width: 94%;
     margin: 0 auto;
   }
@@ -48,7 +47,7 @@ const PostDate = styled.span`
 const PostText = styled.p`
   color: #2d3748;
   line-height: 1.3;
-  padding: 8px 8px 26px 8px;
+  padding: 8px 12px 26px 8px;
   border-bottom: 2px solid;
   --tw-border-opacity: 1;
   border-bottom-color: rgba(243, 244, 246, var(--tw-border-opacity));
