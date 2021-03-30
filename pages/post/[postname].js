@@ -99,12 +99,12 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />
-        <meta property="og:image" content={frontmatter.image} />
+        <meta property="og:image" content={`https://www.agirl.codes${frontmatter.image}`} />
         <meta name="description" content={frontmatter.description}></meta>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={frontmatter.description} />
         <meta name="twitter:title" content={frontmatter.title} />
-        <meta name="twitter:image" content={frontmatter.image} />
+        <meta name="twitter:image" content={`https://www.agirl.codes${frontmatter.image}`} />
         <meta name="twitter:site" content="@kelly_perrie" />
         <meta name="twitter:creator" content="@kelly_perrie" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
