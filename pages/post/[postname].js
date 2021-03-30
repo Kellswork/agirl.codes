@@ -8,6 +8,7 @@ import Nav from "../../components/Nav";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
 import { duotoneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { useRouter } from 'next/router'
 
 const MainDiv = styled.div`
   max-width: 1024px;
