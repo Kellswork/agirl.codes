@@ -8,7 +8,7 @@ import Nav from "../../components/Nav";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
 import { duotoneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 const MainDiv = styled.div`
   max-width: 1024px;
@@ -72,9 +72,8 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
-  // const blogPostTitle = frontmatter.title.split(" ").join("-");
-  const router = useRouter()
-
+  const blogPostTitle = frontmatter.title.split(" ").join("-");
+  const router = useRouter();
 
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
@@ -96,18 +95,23 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:url"
-          content="https://agirl.codes/post/${blogPostTitle}"
+          content={`https://agirl.codes/post/${blogPostTitle}`}
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />
-        <meta property="og:image" content={`https://www.agirl.codes${frontmatter.image}`} />
-        <meta property="og:url" content={`https://www.agirl.codes${router.pathname}`} />
+        <meta
+          property="og:image"
+          content={`https://www.agirl.codes${frontmatter.image}`}
+        />
         <meta name="description" content={frontmatter.description}></meta>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={frontmatter.description} />
         <meta name="twitter:title" content={frontmatter.title} />
-        <meta name="twitter:image" content={`https://www.agirl.codes${frontmatter.image}`} />
+        <meta
+          name="twitter:image"
+          content={`https://www.agirl.codes${frontmatter.image}`}
+        />
         <meta name="twitter:site" content="@kelly_perrie" />
         <meta name="twitter:creator" content="@kelly_perrie" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
