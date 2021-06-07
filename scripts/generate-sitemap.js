@@ -38,5 +38,5 @@ const globby = require('globby');
 //     parser: 'html'
 //   });
 
-  fs.writeFileSync('public/sitemap.xml');
+  fs.writeFileSync('public/sitemap.html');
 })();
