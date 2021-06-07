@@ -8,7 +8,6 @@ import Nav from "../../components/Nav";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
 import { duotoneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import { useRouter } from "next/router";
 
 const MainDiv = styled.div`
   max-width: 1024px;
@@ -18,6 +17,7 @@ const MainDiv = styled.div`
 
   h1 {
     font-size: 2.25rem;
+    text-transform: capitalize;
     margin-left: 27%;
     box-sizing: border-box;
     max-width: 760px;
@@ -73,7 +73,6 @@ const renderers = {
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
   const blogPostTitle = frontmatter.title.split(" ").join("-");
-  const router = useRouter();
 
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
@@ -133,7 +132,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       <article>
         <div>
           <h1>{frontmatter.title}</h1>
-          <div className="comment-count-view">{/* Comment Counts */}</div>
           <PostDiv>
             <aside className="sidebar-container">
               <div className="sidebar-content">

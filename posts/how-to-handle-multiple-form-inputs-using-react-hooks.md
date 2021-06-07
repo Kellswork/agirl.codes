@@ -1,15 +1,15 @@
 ---
-title: 'How to Build Forms with Multiple Input Fields using React Hooks'
+title: 'how to handle multiple form inputs using react hooks'
 date: 22-11-2020
 fullDate: Sunday, 22 November 2020
 tags: React
 image: ../../posts-images/signup-form.png
-description: 'Forms can be considered as the backbone of web applications. How would you get any information from your users without forms?'
+description: 'In this article, I will show you how to use React Hooks for handling multiple input fields in a form with useState.'
 ---
 
 Forms can be considered as the backbone of web applications. How would you get any information from your users without forms? Yes there are libraries available to easily build forms now ( a nice one is Formik) but having an understanding of how to create forms in React from scratch will give you a good understanding of what libraries like Formik does under the hood, It's pretty easy. 
 
-### Controlled and uncontrolled input
+### Controlled and Uncontrolled Input
 
 The default action for an HTML form is to have the page refreshed which causes you to lose all your data. With react we can, we use javascript to handle the way we get access to the data entered by the users.
 
@@ -19,7 +19,7 @@ In HTML, form types such as `<input> <textarea>` generally handle their own stat
 
 for more information on controlled Input → [check here](https://reactjs.org/docs/forms.html)
 
-### Handling multiple input fields in a form with UseState
+### Handling Multiple Input Fields in a Form with useState
 
 Most scenarios, we will be needing more than one input field from users. To demonstrate this, we will be creating a Registration form
 
@@ -87,7 +87,7 @@ In our form, we used best practice and added accessibly by;
 
 To dig deeper into how to make your site accessible, read more on [w3.org](https://www.w3.org/WAI/tutorials/forms/)
 
-### Make Sure to Validate User input
+### Make Sure to Validate User Input
 
 Validation should never be skipped because you should never trust that the user would input the right information.  Options are using the inbuilt HTML validation, writing one yourself or using a validation schema. Any option works fine, I recommend trying using a validation schema like Yup as it makes writing validation for the fields a breeze. Here's a Medium link to an article explaining why you need it and how to use it in validation your forms
 > [Introduction to Yup Object Validation In React](https://medium.com/@rossbulat/introduction-to-yup-object-validation-in-react-9863af93dc0e)
