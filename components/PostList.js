@@ -20,6 +20,12 @@ const PostTitle = styled.a`
   color: #4a5568;
   cursor: pointer;
   text-transform: capitalize;
+  &:hover {
+    color: #4a5568ba;
+  }
+  &:active {
+   color: #034282;
+  }
   @media (max-width: 760px) {
       font-size: 1.5rem;
     }
