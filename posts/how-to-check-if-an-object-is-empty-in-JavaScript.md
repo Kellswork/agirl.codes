@@ -8,7 +8,7 @@ image: '/posts-images/social-media-header.jpg'
 ---
 
 
-In this article, I will be sharing different ways to check if an object is empty in JavaScript.
+In this article, I will be sharing 6 different javascrpt methods you can use to check for empty if an object is empty or not.
 
 Let's start with creating an empty object using literal syntax.
 
