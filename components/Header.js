@@ -4,12 +4,9 @@ import styled from "styled-components";
 const HeaderCard = styled.div`
   width: 260px;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 20px;
   border-radius: 4px;
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border: 2px solid #bcccdc47;
   .card-icons {
     display: flex;
     justify-content: space-evenly;
@@ -64,9 +61,6 @@ export default function Header() {
     <>
       <header className="header">
         <HeaderCard className="header-card">
-          <div className="card-image">
-            <img src="/blog-image.jpg" alt="blog image" />
-          </div>
           <div className="card-body">
             <h3 className="card-name">Kelechi Ogbonna</h3>
             <h3 className="card-occupation">SOFTWARE DEVELOPER</h3>
