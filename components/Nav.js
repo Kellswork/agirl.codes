@@ -25,10 +25,7 @@ const NavContainer = styled.nav`
     }
   }
   .logo {
-    /* width: 260px;
-    text-align: center; */
     img {
-      width:180px;
       cursor: pointer;
     }
   }
@@ -184,7 +181,7 @@ export default function Nav() {
       <div className="nav-content">
         <div className="logo">
           <Link href='/'>
-          <img src="/logo.svg" alt="logo" />
+          <img width="180px" height="76px" src="/logo.svg" alt="logo" />
           </Link>
         
         </div>
@@ -210,10 +207,4 @@ export default function Nav() {
       </div>
     </NavContainer>
   );
-}
-
-{
-  /* <Link href="/">Home</Link>
-<Link href="#">Portfolio</Link>
-<Link href="#">Subscribe</Link> */
 }

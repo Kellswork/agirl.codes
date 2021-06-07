@@ -72,13 +72,13 @@ export default function Header() {
             </div>
             <div className="card-icons">
               <Link href="https://www.linkedin.com/in/kelechi-ogbonna/">
-                <img src="/linkedin.svg" alt="linkedin icon" />
+                <img width="40px" height="40px" src="/linkedin.svg" alt="linkedin icon" />
               </Link>
               <Link href="https://github.com/Kellswork">
-                <img src="/github.svg" alt="github icon" />
+                <img width="40px" height="40px" src="/github.svg" alt="github icon" />
               </Link>
               <Link href="https://twitter.com/kelly_perrie">
-                <img src="/twitter.svg" alt="twitter icon" />
+                <img width="40px" height="40px" src="/twitter.svg" alt="twitter icon" />
               </Link>
             </div>
           </div>
