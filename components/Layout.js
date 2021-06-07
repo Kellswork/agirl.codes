@@ -17,11 +17,13 @@ const LayoutContainer = styled.div`
       flex-direction: column-reverse;
       margin-left: 0px;
       margin-right: 0px;
+
     }
     .post-content {
       margin-bottom: 8%;
       @media (max-width: 640px) {
         margin-bottom: 0%;
+        width: 90%;
       }
     }
   }

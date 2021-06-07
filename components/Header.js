@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 const HeaderCard = styled.div`
   width: 260px;
+  margin-top:14px;
   text-align: center;
   padding-top: 20px;
-  border-radius: 4px;
+  border-radius: 15px;
     border: 2px solid #bcccdc47;
   .card-icons {
     display: flex;
