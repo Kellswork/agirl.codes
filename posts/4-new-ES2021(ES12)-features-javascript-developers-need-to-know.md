@@ -4,10 +4,10 @@ date: 13-06-2021
 fullDate: Sunday, 13 June 2021
 tags: JavaScript, ES2021
 description: 'These new Javascript features have reached final stage of the Ecmascript proposal and are included in the latest draft. It will be published between June 2021 and jul 2021. For now, they can only be used with Babel.'
-image: ''
+image: '/posts-images/es2021.jpg'
 ---
 
-These new Javascript features have reached [final stage](https://github.com/tc39/proposals/blob/master/finished-proposals.md) of the Ecmascript proposal and are included in the latest draft. It will be published between June 2021 and jul 2021. For now, they can only be used with Babel.
+These new Javascript features have reached the [final stage](https://github.com/tc39/proposals/blob/master/finished-proposals.md) of the Ecmascript proposal and are included in the latest draft. It will be published between June 2021 and July 2021. For now, they can only be used with Babel.
 
 ### 1. Logical Assignment Operators
 
@@ -36,9 +36,9 @@ person.sex = person.sex || 'not specified'
 
  Logical OR operation does a short circuit evaluation.
 
- If the first operand is *thruthy*, it returns the value. Else it returns the second operand.
+ If the first operand is *truthy*, it returns the value. Else it returns the second operand.
 
- In the first example `person.name` is *thruthy* so is was returned, in the second `person.sex` is empty therefore *falsey* so it returned `not specified` .
+ In the first example `person.name` is *truthy* so it was returned, in the second `person.sex` is empty therefore *falsey* so it returned `not specified` .
 
 #### Logical AND Assignment  ( && = )
 
@@ -79,7 +79,7 @@ if(person.location == null || person.location == undefined) {
 
 ```
 
-nullish operator will only assigns if `x` is null or undefined.
+nullish operator will only assign a value to a variable if it is null or undefined.
 
 In this case `person.location` == `null` and was assigned `lagos` value.
 
@@ -122,15 +122,13 @@ const promise3 = new Promise((resolve) => setTimeout(() => resolve('number 3'), 
 }
 ```
 
-**AggregateError** is an object that holds rejection reasons for all promises that were rejected.
-
-in the above example error is an **AggregateError**
+**AggregateError** is an object that holds rejection reasons for all promises that were rejected. In the above example error is an **AggregateError**
 
 **Promise.any()** will throw an **AggregateError** if all the promises were rejected.
 
 ### 4. String.prototype.replaceAll
 
-The `replaceAll()` method gives developers a straight forward way of replaces a substring in a string that occurs once or more.
+The `replaceAll()` method gives developers a straightforward way of replaces a substring in a string that occurs once or more.
 
 Unlike the `String.replce()` method that only changes the first substring it finds in the string with the value you are looking to replace
 
