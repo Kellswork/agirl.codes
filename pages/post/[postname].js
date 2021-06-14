@@ -30,27 +30,23 @@ const MainDiv = styled.div`
       text-align: center;
     }
     @media (max-width: 760px) {
-      margin: 0 auto;
       font-size: 1.8rem;
-      padding-left: 5px;
-      padding-right: 5px;
+      width: 94%;
+      margin: 0 auto;
+    } @media (max-width: 460px) { font-size: 1.6rem; width: 90%; margin: 0 auto; } } .markdown-content h3{ @media (max-width: 400px) { font-size: 1.2rem; } } .markdown-content h4 { font-size: 1.2rem; font-weight: bold; padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+
+    @media (max-width: 400px) {
+      font-size: 1.0rem;
     }
+
   }
-  .comment-section {
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-    max-width: 760px;
-    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-      0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    margin-left: 27%;
-    @media (max-width: 1024px) {
-      width: 80%;
-      margin: 0 auto;
-    }
-    @media (max-width: 640px) {
-      width: 90%;
-      margin: 0 auto;
-    }
+  .markdown-content strong{
+    font-weight: bold;
+  }
+  .markdown-content p{
+    padding-left: 2px;
   }
 `;
 

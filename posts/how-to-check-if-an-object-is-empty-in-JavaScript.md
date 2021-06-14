@@ -84,7 +84,7 @@ Note: this won't work `myObject[id]`, JavaScript will throw an error.
 
 ### 5. UnderScore.js
 
-[_.isEmpty(collection)](https://underscorejs.org/#isEmpty) Returns true if **collection** has no elements. For strings and array-like objects _.isEmpty checks if the length property is 0. 
+[_.isEmpty(collection)](https://underscorejs.org/#isEmpty) Returns true if **collection** has no elements. For strings and array-like objects _.isEmpty checks if the length property is 0.
 
 ```jsx
 _.isEmpty([1, 2, 3]);
