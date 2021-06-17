@@ -128,13 +128,15 @@ const promise3 = new Promise((resolve) => setTimeout(() => resolve('number 3'), 
 
 ### 4. String.prototype.replaceAll
 
-The `replaceAll()` method gives developers a straightforward way of replaces a substring in a string that occurs once or more.
+The `replaceAll()` method gives developers a straightforward way of replacing a substring in a string that occurs once or more.
 
-Unlike the `String.replce()` method that only changes the first substring it finds in the string with the value you are looking to replace
+Unlike the `String.replace()` method that replaces the only first substring it finds in the string. 
+
 
 ```js
-const str = 'music is life, music feeds the soul';
- str.replace('music', 'food');
+let str = 'music is life, music feeds the soul';
+
+str.replaceAll('music', 'food');
 
 console.log(str); // 'food is life, food feeds the soul'
 
