@@ -68,8 +68,9 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
-  const blogPostTitle = frontmatter.title.split(" ").join("-");
-
+  let blogPostTitle = frontmatter.title.split(" ").join("-");
+  blogPostTitle = blogPostTitle.toLowerCase();
+  
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
