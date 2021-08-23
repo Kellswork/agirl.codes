@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://agirl.codes/sitemap.xml
