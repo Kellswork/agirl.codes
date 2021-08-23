@@ -146,4 +146,5 @@ console.log(str); // 'food is life, food feeds the soul'
 
 To get started using ES2021 features in your code, set up your project with Babel compiler, the packages have already been included in `@babel/preset-env`
 
+
 > [A link to setting up a Babel in your project](https://babeljs.io/setup#installation)
