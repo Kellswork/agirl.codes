@@ -68,24 +68,18 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
-  let blogPostTitle = frontmatter.title.split(" ").join("-");
-  blogPostTitle = blogPostTitle.toLowerCase();
-  
+  let blogPostTitle = frontmatter.title.split(" ").join("-").toLowerCase();
+
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-XXXXXX');`,
-          }}
-        />
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-QZXMHMEZWE" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`,
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-NJ5QKRS');`,
           }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -124,32 +118,39 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         ></link>
         <title>{frontmatter.title}</title>
       </Head>
-
-      <Nav />
-      <article>
-        <div>
-          <h1>{frontmatter.title}</h1>
-          <PostDiv>
-            <aside className="sidebar-container">
-              <div className="sidebar-content">
-                <p>{frontmatter.fullDate}</p>
-                <p>
-                  <PostTag>{frontmatter.tags}</PostTag>
-                </p>
-                <Link href="/">
-                  <p className="sidebar-backlink">
-                    <img src="/back-arrow-1767531.svg" alt="back arrow" />
-                    <a>Back to post</a>
+      <body>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5QKRS"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
+        />
+        <Nav />
+        <article>
+          <div>
+            <h1>{frontmatter.title}</h1>
+            <PostDiv>
+              <aside className="sidebar-container">
+                <div className="sidebar-content">
+                  <p>{frontmatter.fullDate}</p>
+                  <p>
+                    <PostTag>{frontmatter.tags}</PostTag>
                   </p>
-                </Link>
+                  <Link href="/">
+                    <p className="sidebar-backlink">
+                      <img src="/back-arrow-1767531.svg" alt="back arrow" />
+                      <a>Back to post</a>
+                    </p>
+                  </Link>
+                </div>
+              </aside>
+              <div className="markdown-content">
+                <ReactMarkdown renderers={renderers} source={markdownBody} />
               </div>
-            </aside>
-            <div className="markdown-content">
-              <ReactMarkdown renderers={renderers} source={markdownBody} />
-            </div>
-          </PostDiv>
-        </div>
-      </article>
+            </PostDiv>
+          </div>
+        </article>
+      </body>
     </MainDiv>
   );
 }
