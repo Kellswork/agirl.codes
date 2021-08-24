@@ -1,5 +1,5 @@
 ---
-title: 'how to check if an object is empty in JavaScript'
+title: 'how to check if an object is empty in javaScript'
 date: 30-03-2021
 fullDate: Sunday, 30 March 2021
 tags: JavaScript
