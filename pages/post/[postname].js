@@ -68,7 +68,7 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
-  let blogPostTitle = frontmatter.title.split(" ").join("-").toLowerCase();
+  let blogPostTitle = frontmatter.title.split(" ").join("-");
 
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
@@ -85,7 +85,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:url"
-          content={`https://agirl.codes/post/${blogPostTitle}`}
+          content={`https://agirl.codes/post/${blogPostTitle.toLowerCase()}`}
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter.title} />
