@@ -118,7 +118,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         ></link>
         <title>{frontmatter.title}</title>
       </Head>
-      <body>
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5QKRS"
@@ -150,7 +149,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
             </PostDiv>
           </div>
         </article>
-      </body>
     </MainDiv>
   );
 }

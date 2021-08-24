@@ -84,7 +84,6 @@ export default function Layout({
           ></link>
           <title>{pageTitle}</title>
         </Head>
-        <body>
         <noscript
             dangerouslySetInnerHTML={{
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5QKRS"
@@ -98,7 +97,6 @@ export default function Layout({
               <div className="content">{children}</div>
             </section>
           </div>
-        </body>
       </LayoutContainer>
       <Footer />
     </>
