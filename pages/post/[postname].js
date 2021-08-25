@@ -7,7 +7,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import Nav from "../../components/Nav";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
-import { duotoneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const MainDiv = styled.div`
   max-width: 1024px;
@@ -54,7 +54,7 @@ const renderers = {
   code: ({ language, value }) => {
     return (
       <SyntaxHighlighter
-        style={duotoneLight}
+        style={materialDark}
         language={language}
         children={value}
         customStyle={{
