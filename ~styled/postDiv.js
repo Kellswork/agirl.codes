@@ -35,7 +35,12 @@ export const PostDiv = styled.div`
         img {
           width: 24px;
         }
+        .back-btn {
+          text-decoration: none;
+          color: #076ff3
+        }
       }
+      
     }
   }
   .markdown-content {
@@ -46,9 +51,9 @@ export const PostDiv = styled.div`
       0 10px 10px -5px rgba(0, 0, 0, 0.04);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    color: #374252;
+    color: #20324c;
     line-height: 28px;
-    list-style: circle;
+    list-style: disc;
     @media (max-width: 1040px) {
       width: 90%;
       overflow-x: scroll;
@@ -60,10 +65,13 @@ export const PostDiv = styled.div`
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 600;
       padding-top: 30px;
       padding-bottom: 12px;
+    }
+    h4 code {
+      color: #D929FF;
     }
     p {
       padding-top: 10px;
@@ -72,10 +80,9 @@ export const PostDiv = styled.div`
         border-radius: 4px;
       }
       code {
-        background: #80808030;
         padding: 2px 4px;
         border-radius: 2px;
-        color: #d20404;
+        color: #d929ff;
       }
       em {
         font-style: italic;
@@ -83,13 +90,12 @@ export const PostDiv = styled.div`
       }
     }
     ul {
-      list-style: circle;
+      list-style: disc ;
       padding-left: 20px;
     }
     a,
     a:visited {
-      color: #3d9970;
-      text-decoration: none;
+      color: #076ff3;
     }
 
     a:hover,

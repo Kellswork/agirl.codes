@@ -51,6 +51,9 @@ const MainDiv = styled.div`
   .markdown-content p{
     padding-left: 2px;
   }
+  .markdown-content img {
+    width: 100%;
+  }
 `;
 
 const renderers = {
@@ -142,7 +145,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                   <Link href="/">
                     <p className="sidebar-backlink">
                       <img src="/back-arrow-1767531.svg" alt="back arrow" />
-                      <a>Back to post</a>
+                      <a href="/" className='back-btn'>Back to post</a>
                     </p>
                   </Link>
                 </div>
