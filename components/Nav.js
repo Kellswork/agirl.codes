@@ -123,7 +123,7 @@ const MenuArea = styled.div`
     color: white;
     text-decoration: none;
     transition: color 0.2s;
-    font-family: Trebuchet MS;
+    font-family: inter;
     text-transform: uppercase;
     padding: 10px 0;
   }

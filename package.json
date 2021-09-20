@@ -8,6 +8,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^11.1.2",
     "globby": "^11.0.1",
     "gray-matter": "^4.0.2",
     "hyvor-talk-react": "^1.0.3",

@@ -7,7 +7,7 @@ import Footer from "./Footer";
 const LayoutContainer = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   .layout-content {
     display: flex;
     justify-content: space-around;
@@ -60,11 +60,11 @@ export default function Layout({
             name="google-site-verification"
             content="V30u2_77VrbrBBTRxneUbIN-QZzZKLT8Q-p_1xCvBSk"
           />
+          <meta name="description" content={pageDescription}></meta>
           <meta property="og:type" content="website" />
           <meta property="og:title" content={pageTitle} />
           <meta property="og:description" content={pageDescription} />
           <meta property="og:url" content="agirl.codes" />
-          <meta name="description" content={pageDescription}></meta>
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:description" content={pageDescription} />
           <meta name="twitter:title" content={pageTitle} />

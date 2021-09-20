@@ -46,7 +46,6 @@ export const PostDiv = styled.div`
       0 10px 10px -5px rgba(0, 0, 0, 0.04);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    background: white;
     color: #374252;
     line-height: 28px;
     list-style: circle;

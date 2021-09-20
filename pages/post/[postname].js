@@ -7,12 +7,12 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import Nav from "../../components/Nav";
 import { PostDiv } from "../../~styled/postDiv";
 import { PostTag } from "../../components/PostList";
-import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const MainDiv = styled.div`
   max-width: 1024px;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
+  font-family: "inter", sans-serif;
   margin-bottom: 5%;
 
   h1 {
@@ -42,6 +42,9 @@ const MainDiv = styled.div`
     }
 
   }
+  .markdown-content {
+    line-height: 2;
+  }
   .markdown-content strong{
     font-weight: bold;
   }
@@ -54,12 +57,12 @@ const renderers = {
   code: ({ language, value }) => {
     return (
       <SyntaxHighlighter
-        style={materialDark}
+        style={vscDarkPlus}
         language={language}
         children={value}
         customStyle={{
-          borderRadius: "8px",
-          fontFamily: `"Raleway", sans-serif`,
+          borderRadius: "10px",
+          fontFamily: `"inter", sans-serif`,
         }}
       />
     );
@@ -83,9 +86,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={frontmatter.description} />
         <meta
           property="og:url"
-          content={`https://agirl.codes/post/${blogPostTitle.toLowerCase()}`}
+          content={`https://agirl.codes/post/${blogPostTitle}`}
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter.title} />
