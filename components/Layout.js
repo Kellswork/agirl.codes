@@ -59,7 +59,7 @@ export default function Layout({
             name="google-site-verification"
             content="V30u2_77VrbrBBTRxneUbIN-QZzZKLT8Q-p_1xCvBSk"
           />
-          <meta name="description" content={pageDescription}></meta>
+          <meta name="description" content={pageDescription}/>
           <meta property="og:type" content="website" />
           <meta property="og:title" content={pageTitle} />
           <meta property="og:description" content={pageDescription} />
