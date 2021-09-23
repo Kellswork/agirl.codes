@@ -20,7 +20,6 @@ const LayoutContainer = styled.div`
 
     }
     .post-content {
-      margin-bottom: 8%;
       @media (max-width: 640px) {
         margin-bottom: 0%;
         width: 90%;

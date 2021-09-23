@@ -12,12 +12,7 @@ Next, you will retrieve the form data when submitted and save it to state using 
 
 To show how this works, We will be building a Contact form with three input fields for the contact's name, email, and phone number. when the form is submitted, the form data will be saved in a contacts state and passed to a contact list component, where it is rendered to the browser.
 
-If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirl.codes/post/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused as I will walk you through;
-
-- how to set up a basic React app using create-react-app
-- how React converts an uncontrolled form to a controlled form component.
-- how to retrieve the form data and pass it as props to another component.
-- Create a React functional component that takes the form data as props and renders it to the browser.
+If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirl.codes/post/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused or for anyone who wants to refresh their knowledge on react building React forms with useState hook.
 
 Here's a link to the Project on [Github](https://github.com/Kellswork/contact-info).
 
@@ -348,11 +343,12 @@ At this point, when you fill the form and click on the submit button, the data i
 
 ### Conclusion
 
-In this tutorial, we;
+In this tutorial, we learnt;
 
-- built a jsx form and converted it from an uncontrolled state form to a controlled state.
-- use the `useState` hook to store and update the form data when submitted,
-- and lastly, passed `state` data as props from parent component to child component.
+- how to set up a basic React app using create-react-app and create a simple jsx form.
+- how React converts an uncontrolled form to a controlled form component.
+- how to retrieve the form data and pass it as props to another component.
+- Create a React functional component that takes the form data as props and renders it to the browser.
 
 To view the full project code, here's a link to [Github repository](https://github.com/Kellswork/contact-info).
 

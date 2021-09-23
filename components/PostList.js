@@ -12,6 +12,7 @@ const DivList = styled.div`
 `;
 const PostTitle = styled.a`
   font-size: 1.87rem;
+  line-height: 1.3;
   text-decoration: none;
   font-weight: 700;
   padding-bottom: 10px;
@@ -52,7 +53,7 @@ const PostDate = styled.span`
 `;
 const PostText = styled.p`
   color: #2d3748;
-  line-height: 1.3;
+  line-height: 1.6;
   padding: 8px 12px 26px 8px;
   border-bottom: 2px solid;
   --tw-border-opacity: 1;
@@ -65,7 +66,6 @@ const PostData = styled.div`
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-
   return (
     <div className="postlist">
       {!posts && <div>No posts!</div>}
