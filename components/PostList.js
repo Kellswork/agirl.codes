@@ -12,7 +12,7 @@ const DivList = styled.div`
   }
 `;
 const PostTitle = styled.a`
-  font-size: 1.87rem;
+  font-size: 1.7rem;
   line-height: 1.3;
   text-decoration: none;
   font-weight: 700;
@@ -71,11 +71,9 @@ export default function PostList({ posts }) {
 
   const postDataSortByDate = posts.sort((a, b) => {
     const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'm-d-yyyy')
-    console.log('here 2', beforeDate)
     const afterDate = DateTime.fromFormat(b.frontmatter.date, 'm-d-yyyy')
     return afterDate - beforeDate
   })
-  // console.log('here',postDataSortByDate);
 
   return (
     <div className="postlist">
