@@ -1,6 +1,6 @@
 ---
 title: 'The complete guide to building React forms with useState Hook'
-date: 19-09-2021
+date: 26-09-2021
 fullDate: Sunday, 19 September 2021
 tags: React forms, React Hooks
 image: ../../posts-images/signup-form.png

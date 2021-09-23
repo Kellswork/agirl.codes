@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import { DateTime } from 'luxon'
 
 const DivList = styled.div`
   border-radius: 4px;
@@ -66,12 +67,22 @@ const PostData = styled.div`
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
+  console.log((posts[1].frontmatter.date))
+
+  const postDataSortByDate = posts.sort((a, b) => {
+    const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'm-d-yyyy')
+    console.log('here 2', beforeDate)
+    const afterDate = DateTime.fromFormat(b.frontmatter.date, 'm-d-yyyy')
+    return afterDate - beforeDate
+  })
+  // console.log('here',postDataSortByDate);
+
   return (
     <div className="postlist">
       {!posts && <div>No posts!</div>}
 
       {posts &&
-        posts.map((post) => {
+        postDataSortByDate.map((post) => {
           return (
             <DivList key={post.slug}>
               <div className="post-image"></div>
