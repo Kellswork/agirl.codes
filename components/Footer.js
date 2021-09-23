@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterDiv = styled.footer`
-  position: fixed;
-  bottom: 0;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
