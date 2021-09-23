@@ -3,6 +3,7 @@ import Header from "./Header";
 import styled from "styled-components";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import Subscribe from "./Subscribe";
 
 const LayoutContainer = styled.div`
   max-width: 1024px;
@@ -96,6 +97,7 @@ export default function Layout({
             <section className="post-content">
               <div className="content">{children}</div>
             </section>
+            <Subscribe />
           </div>
       </LayoutContainer>
       <Footer />
