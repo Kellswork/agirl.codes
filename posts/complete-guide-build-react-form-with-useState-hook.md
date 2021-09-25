@@ -4,17 +4,14 @@ date: 26-09-2021
 fullDate: Sunday, 19 September 2021
 tags: React forms, React Hooks
 image: ../../posts-images/signup-form.png
-description: "In this tutorial, You will learn how to build forms with one or more input fields using JSX. You will retrieve the form data when submitted and save it to state using useState hook."
+description: "This tutorial teaches how to build forms in react with uesState hook, how to pass the data as props to another react component and have it rendered to the browser"
 ---
 
-In this tutorial, You'll learn how to build forms with one or more input fields using JSX. You will understand how a form moves from an uncontrolled state to a controlled state with React. 
-Next, you will retrieve the form data when submitted and save it to state using useState hook. Finally, you will pass form data as props to a component and have the component render the data on the browser.
+In this tutorial, You'll learn how to build forms with one or more input fields using JSX, understand how a html uncontrolled form transforms to a React controlled state form, retrieve the form data when submitted and save it to state using useState hook and finally, pass form data as props to a component and have the component render the data on the browser.
 
-To show how this works, We will be building a Contact form with three input fields for the contact's name, email, and phone number. when the form is submitted, the form data will be saved in a contacts state and passed to a contact list component, where it is rendered to the browser.
+The project we will be building is a Contact form with three input fields for the contact's name, email, and phone number. when the form is submitted, the form data will be saved in a contacts state and passed to a contact list component, where it is rendered to the browser. 
 
 If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirl.codes/post/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused or for anyone who wants to refresh their knowledge on react building React forms with useState hook.
-
-Here's a link to the Project on [Github](https://github.com/Kellswork/contact-info).
 
 ### 1. Build a simple React form with multiple input fields
 
@@ -25,7 +22,7 @@ npx create-react-app contact-info
 
 Get rid of everything you don't need, here's a link to what my app looks like after getting rid of content and files I don't need; [Cleanup application](https://github.com/Kellswork/contact-info/tree/cleanup-application)
 
-In the src folder, create a file `src/components/ContactForm.jsx`, here we will build our form and import it into `App.js` to be rendered.
+In the src folder, create a file `src/components/ContactForm.jsx`, this componenet  contains the code to build the form.
 
 
 ```jsx
@@ -69,9 +66,7 @@ export default function UserForm() {
 
 ```
 
-Here I have a `<div>` tag that serves as the container. It contains `<form>` tag with a `<h3>` title tag and three `<input>` tags for `name` ,`phone number` and `email` wrapped in `<div>` tags, and a submit button for submitting the form data.
-
- I also added the types as HTML uses it to provide a bit of validation for us. It will check that whatever the user input for `email` is an email and for `phone number`, must be a Number.
+ Adding the `type` to the input field, HTML validates the email and number input.It will check that whatever the user inputs for `email` is an email and for `phone number`, must be a number.
 
 Import `UserForm.jsx` into `App.js` to see the form rendered on your browser.
 
@@ -94,7 +89,7 @@ export default App;
 
 Now that we have a simple form being rendered on the browser, we are going to convert the form input state to be controlled by React. By default, forms handle their own state. Converting the form to a controlled state is telling React to take over the form state from the browser with the following ways;
 
-- Create a `state` object that will be used to store the form data. This form state will be handled by React using the `useState` hook.
+- Creating a `state` object to store the form data. React uses the `useState hook` to handle the form state.
 - Add the `value` property to the form, and assign it to the `state` object properties.
 - Add an `onChange event listener` function to handle updating the form state.
 
@@ -104,9 +99,9 @@ Now that we have a simple form being rendered on the browser, we are going to co
 
 Navigate to `src/components/ContactForm.jsx` , import `useState` hook from react.
 
-Create a  `contact` state object with the form input names as the properties.
+Create a  `contact` state with the form input names as the properties.
 
-Add `value` property to each input field and set the value to contact object property as illustrated below.
+Add `value` property to each input field and set the value to contact state properties as illustrated below.
 
 
 ```jsx
@@ -161,11 +156,11 @@ export default function UserForm() {
 
 ```
 
-Right now, we have given React control over the form but we are yet to update the input fields.
+React now has control over the form but we are yet to update the input fields.
 
 we are setting the `value` in the input fields to the `contact` state properties.
 
- If you check your form in the browser, you will realise you can't type in the input fields, that's because we are yet to provide a way for React to track the value of input elements.
+ If you check your form in the browser, you will realise you can't type in the input fields, that's because React has no way to track the value of input elements.
 
  ![contact-form](/posts-images/react-forms/jsx-contact-form.png)
 
@@ -181,15 +176,15 @@ const handleChange = (event) => {
 
 `setContactInfo` is a function that comes with `useState Hook` and it's used to update our current state object.
 
-To preserve the previous state, we spread the `contactInfo` data using the javascript spread operator. This way, we don't lose any of the previous data as we update our input field state. 
+To preserve the previous state, we spread the `contactInfo` data using the javascript spread operator. This way, the previous data is not lost while we update the input state. 
 
 For example, without spreading the previous state, the only state that will be saved in the `contact` state when you submit your form data is `phone number`. `setContactInfo` will replace the old state with the new state which will be the last input field you updated(`phone number`).
 
 To handle multiple controlled input elements, the name attribute added to each input element is used by `setContactInfo` to update the `contact state` properties based on the values from `event.target.name`.
 
-### 3. Retrieving Form Data from controlled input Field.
+### 3. Retrieving Form Data from Controlled Input Field.
 
-Finally, we are going to log the form data to the console using a `handlesubmit` function.
+Now, Let's log the form data to the console using a `handlesubmit` function.
 
 The `handleSubmit` function will log the `contactInfo` state to the browser. 
 
@@ -203,11 +198,16 @@ const handleSubmit = (event) => {
     event.preventDefault();
     console.log(contactInfo);
   };
+
+
+
+<form onSubmit={handleSubmit}> 
+  
 ```
 
  ![submit-form](/posts-images/react-forms/jsx-submit-form.png)
 
- Last, let's clear the input field when the submit button is clicked by setting the `contactInfo` state variable to an empty string. Update `handleSubmit` function like so
+ Last, let's clear the input field when the submit button is clicked, set the `contactInfo` state variable to an empty string. Update `handleSubmit` function like so
 
 ```jsx
 const handleSubmit = (event) => {
@@ -218,17 +218,18 @@ const handleSubmit = (event) => {
 ```
 ### 4. Display Form Data in Another Component
 
-in this phase, you learn how to pass data from parent component to child component. This data will be passed from `App.js`(parent) to the `UserList` (child) component where it is displayed.
+in this phase, you learn how to pass data from parent component to child component. This data will be passed from `App.js`(parent) to the `ContactList` (child) component where it is displayed.
 
-Now that we have our form data, let's display this data in another component `ContactList.jsx`
+Now that we have our form data, let's display this data in `ContactList.jsx`.
 
-To do that, we have to first make some updates to `App.js`. 
+Before that, let's create a `contacts` state in `App.js` to store each `contactInfo` object data gotten from `ContactForm.jsx`. It's serves as a data storage.
+This `contacts` state will be passed as props to the `ContactList.jsx` component.
 
-First, we have to create a `contacts` state to store the `contactInfo` object data from `ContactForm.jsx`. This `contacts` Array list will be passed as props to the `ContactList.jsx` component as props.
+Navigate to App.js and create a `contacts` state using `useState` React Hook and set it to an empty array.
 
-- Navigate to App.js and create a `contacts` state using `useState` React Hook and set it to an empty array.
-- Create an `addContact` function that is going to take `contactInfo` as a parameter for updating the `contacts` state.
-- pass `addContact` function as `props` to the `ContactForm.jsx` component. This is also and example of passing data from parent to child component.
+Create an `addContact` function that takes `contactInfo` as a parameter for updating the `contacts` state.
+
+pass `addContact` function as `props` to the `ContactForm.jsx` component. This is also an example of passing data from parent to child component.
 
 ```jsx
 import { useState } from "react";
@@ -254,7 +255,7 @@ function App() {
 export default App;
 ```
 
-Using object [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) in javascript, get `addContact` from props, Update the `handleSubmit` function so instead of logging the data to the console, we will pass it as a parameter to the addContact Function.
+Using object [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) in javascript, get `addContact` from props, Update the `handleSubmit` function so instead of logging the data to the console, pass it as a parameter to the addContact function like so.
 
 ```jsx
 import { useState } from "react";
@@ -270,19 +271,17 @@ const handleSubmit = (event) => {
   };
 ```
 
- When you submit the form, the `contacts` state is updated with the form data.
+When you submit the form, the `contacts` state is updated with the new form state.
 
-Now that we have an array of contacts, let's display the contact details in a `ContacList` component.
+Now that we have an array of contacts, let's display each conctact info in a `ContacList` component.
 
 #### Pass `Contacts` state data as props to a React component.
 
- Last on the agenda is setting up the `ContactList.jsx` to display the `contacts` state data.
+ Last on the agenda is setting up the `ContactList.jsx` to display the `contacts state` data.
 
 create a `ContactList` file in `src/components` and export a simple `<div>` tag to prevent the app from breaking.
 
-pass `contacts` data as props to `contactList` component, use the same syntax as HTML attributes as we did for `addContact` in `ContactForm`, the `ContactList` component will receive the data as props.
-
-Import `ContactList` file into `App.js` and pass `contacts` data to as a parameter to `ContactList` component as shown below.
+Import `ContactList` file into `App.js` and pass `contacts` data as props to `contactList` component
 
 ```jsx
 import { useState } from "react";
@@ -312,13 +311,11 @@ export default App;
 
 Navigate to `src/ContactList.jsx`
 
-We are going to retrieve the props data passed into the component using destructing as we did for `ContactForm.jsx`.
+Rretrieve the props data passed into the component using destructing as we did for `ContactForm.jsx`.
 
-Instead of using `props.contacts` to get the data, use object restructuring to access contacts data directly.
+Due to `contacts` data being an array, we need a way to display each `contact` detail.  I'm using `Array.prototype.map()` to loop through each value in and setting the `key` attribute  value to `phone number` because it is garanteed to be unique. The `key` attribute is how React keeps track of the values in the array.
 
-Due to `contacts` data being an array format, we need a way to display each `contact` detail.  I'm using `Array.prototype.map()` to loop through each value in and setting `key` attribute to `phone number` because it is unique. The `Key` value is how React keeps track of the values in the array.
-
-Here we use `<p>` tags to display `name`, `email` and `phone number` of each contact object as shown below.
+the `<p>` tag is used to display `name`, `email` and `phone number` of each contact object
 
 ```jsx
 
@@ -337,13 +334,13 @@ export default function UserList({contacts}) {
 }
 ```
 
-At this point, when you fill the form and click on the submit button, the data is displayed on the page. Feel free to style the page any way you like.
+At this point, when you fill the form and click on the submit button, the data is displayed on the page.
 
- ![form-result](/posts-images/react-forms/jsx-submit-form.png)
+ ![form-result](/posts-images/react-forms/form-result.png)
 
 ### Conclusion
 
-In this tutorial, we learnt;
+In this tutorial, I covered;
 
 - how to set up a basic React app using create-react-app and create a simple jsx form.
 - how React converts an uncontrolled form to a controlled form component.
@@ -352,4 +349,4 @@ In this tutorial, we learnt;
 
 To view the full project code, here's a link to [Github repository](https://github.com/Kellswork/contact-info).
 
-If you found this tutorial helpful, subscribe to my newsletter and to be notified of more upcoming quality articles as soon as they are published sent to your inbox
+Discuss on [medium]()
