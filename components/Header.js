@@ -1,13 +1,18 @@
-import Link from "next/link";
-import styled from "styled-components";
+import Link from 'next/link'
+import styled from 'styled-components'
 
 const HeaderCard = styled.div`
   width: 260px;
-  margin-top:14px;
+  margin-top: 10px;
   text-align: center;
   padding-top: 20px;
   border-radius: 15px;
-    border: 2px solid #bcccdc47;
+  border: 2px solid #bcccdc47;
+
+  @media (max-width: 640px) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
   .card-icons {
     display: flex;
     justify-content: space-evenly;
@@ -20,32 +25,27 @@ const HeaderCard = styled.div`
       cursor: pointer;
     }
   }
-  @media (max-width: 640px) {
-    margin: 0 auto;
-    margin-bottom: 30px;
+
+  .card-name {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
   }
-  .card-body {
-    .card-name {
-      font-size: 1.125rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 20px 20px 10px 20px;
-    }
-    .card-occupation {
-      width: 80%;
-      margin: 0 auto;
-      padding: 4px 6px;
-      background: #7f5bd5b0;
-      border-radius: 10px;
-      color: #ff0;
-      font-size: 14px;
-    }
+  .card-occupation {
+    background: #7f5bd5b0;
+    border-radius: 10px;
+    color: #ff0;
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
   .card-text {
-    text-align: center;
-    padding: 15px;
+    padding-top: 10px;
     letter-spacing: 1.5px;
     line-height: 1.3;
+    padding-bottom: 10px;
+
   }
   .card-image {
     img {
@@ -55,7 +55,32 @@ const HeaderCard = styled.div`
       border: 2px solid rgba(0, 0, 0, 0.2);
     }
   }
-`;
+
+  @media (max-width: 900px) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 96%;
+    text-align: left;
+    border-radius: 4px;
+
+    .card-details {
+      padding-left: 25px;
+    }
+    .card-occupation {
+      border-radius: 4px;
+      padding-left: 5px;
+      display: inline-block;
+      padding-right: 5px;
+    }
+    .card-text {
+      letter-spacing: 1.3px;
+      line-height: 1.5;
+    }
+    .card-icons {
+      padding: 0;
+    }
+  }
+`
 
 export default function Header() {
   return (
@@ -63,28 +88,45 @@ export default function Header() {
       <header className="header">
         <HeaderCard className="header-card">
           <div className="card-body">
-            <h3 className="card-name">Kelechi Ogbonna</h3>
-            <h3 className="card-occupation">SOFTWARE DEVELOPER</h3>
-            <div className="card-text">
-              <p>
-                Welcome to my little corner of the web where I share articles on
-                frotend/fullstack development.
-              </p>
+            <div className="card-details">
+              <h3 className="card-name">Kelechi Ogbonna</h3>
+              <h3 className="card-occupation">FRONTEND DEVELOPER</h3>
+              <div className="card-text">
+                <p>
+                  Welcome to my little corner of the web where I share articles
+                  on frotend development.
+                </p>
+              </div>
             </div>
             <div className="card-icons">
               <Link href="https://www.linkedin.com/in/kelechi-ogbonna/">
-                <img width="40px" height="40px" src="/linkedin.svg" alt="linkedin icon" />
+                <img
+                  width="40px"
+                  height="40px"
+                  src="/linkedin.svg"
+                  alt="linkedin icon"
+                />
               </Link>
               <Link href="https://github.com/Kellswork">
-                <img width="40px" height="40px" src="/github.svg" alt="github icon" />
+                <img
+                  width="40px"
+                  height="40px"
+                  src="/github.svg"
+                  alt="github icon"
+                />
               </Link>
               <Link href="https://twitter.com/kelly_perrie">
-                <img width="40px" height="40px" src="/twitter.svg" alt="twitter icon" />
+                <img
+                  width="40px"
+                  height="40px"
+                  src="/twitter.svg"
+                  alt="twitter icon"
+                />
               </Link>
             </div>
           </div>
         </HeaderCard>
       </header>
     </>
-  );
+  )
 }

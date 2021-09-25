@@ -39,4 +39,11 @@ export default (req, res) => {
       console.log(error)
       return res.status(500).json({ error: error.message || error.toString() })
     })
+    
 }
+//steps:
+    // get mailchimp api key, audience id,
+    // install axios and setup  post request using Promise, i dunno if async works, 
+    // pass the data need ( data, options and url), make sure not to make any mistakes in the url and data 
+    // infact with any parameter being passed cause it could lead to an error message
+    // move to componnents/subscribe
