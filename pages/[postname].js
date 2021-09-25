@@ -4,11 +4,11 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import styled from 'styled-components'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import Nav from '../../components/Nav'
-import { PostDiv } from '../../~styled/postDiv'
-import { PostTag } from '../../components/PostList'
+import Nav from '../components/Nav'
+import { PostDiv } from '../~styled/postDiv'
+import { PostTag } from '../components/PostList'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
-import Subscribe from '../../components/Subscribe'
+import Subscribe from '../components/Subscribe'
 
 const MainDiv = styled.div`
   max-width: 1024px;
@@ -200,8 +200,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 export async function getStaticProps({ ...ctx }) {
   const { postname } = ctx.params
 
-  const content = await import(`../../posts/${postname}.md`)
-  const config = await import(`../../siteconfig.json`)
+  const content = await import(`../posts/${postname}.md`)
+  const config = await import(`../siteconfig.json`)
   const data = matter(content.default)
 
   return {
@@ -222,9 +222,9 @@ export async function getStaticPaths() {
       return slug
     })
     return data
-  })(require.context('../../posts', true, /\.md$/))
+  })(require.context('../posts', true, /\.md$/))
 
-  const paths = blogSlugs.map((slug) => `/post/${slug}`)
+  const paths = blogSlugs.map((slug) => `/${slug}`)
 
   return {
     paths,

@@ -66,7 +66,6 @@ const PostData = styled.div`
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-  console.log((posts[1].frontmatter.date))
 
   const postDataSortByDate = posts.sort((a, b) => {
     const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'm-d-yyyy')
@@ -83,7 +82,7 @@ export default function PostList({ posts }) {
           return (
             <DivList key={post.slug}>
               <div className="post-image"></div>
-              <Link href={{ pathname: `/post/${post.slug}` }}>
+              <Link href={{ pathname: `/${post.slug}` }}>
                 <PostTitle>{post.frontmatter.title}</PostTitle>
               </Link>
               <PostData>
