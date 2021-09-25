@@ -42,7 +42,7 @@ const SubFormContainer = styled.div`
     }
   }
   .form-input input {
-    outline: none;
+    outline: #f9fafb;
     display: block;
     width: 41%;
     background-color: #f9fafb;
@@ -84,11 +84,15 @@ const SubFormContainer = styled.div`
 
 function Subscribe() {
   const [email, setEmail] = useState('')
+  const [firstName, setFirstName] = useState('')
   const [state, setState] = useState('idle')
   const [errorMsg, setErrorMsg] = useState(null)
 
-  const subscribe = async () => {
-    // setState('loading')
+  const subscribe = async (e) => {
+    e.preventDefault()
+
+    setState('Loading')
+
     try {
       const response = await axios.post('api/subscribe', { email })
       console.log(response)
@@ -104,7 +108,7 @@ function Subscribe() {
       <h4 className="sub-header">Subscribe to the newsletter</h4>
       <p className="sub-text">
         Get to notified on quality articles about frontend development and more
-        sent to your inbox
+        sent to your inbox. I'll send you a an email once a month, no spam.
       </p>
       <form onSubmit={subscribe}>
         <SubFormContainer>
@@ -114,7 +118,7 @@ function Subscribe() {
               id="email-input"
               name="email"
               type="email"
-              placeholder="What's your email address"
+              placeholder="Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -123,13 +127,21 @@ function Subscribe() {
               name="first-name"
               type="text"
               placeholder="First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className="sub-form-btn">
-            <button type="submit" className="form-btn" onClick={subscribe}>
+            <button
+              disabled={state === 'loading'}
+              type="submit"
+              className="form-btn"
+              onClick={subscribe}
+            >
               Subscribe
             </button>
           </div>
+          
         </SubFormContainer>
       </form>
     </SubscribeContainer>

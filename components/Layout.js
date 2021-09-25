@@ -90,7 +90,6 @@ export default function Layout({
         ></link>
         <title>{pageTitle}</title>
       </Head>
-      <body>
         <LayoutContainer>
           <noscript
             dangerouslySetInnerHTML={{
@@ -110,7 +109,6 @@ export default function Layout({
           </div>
         </LayoutContainer>
         <Footer />
-      </body>
     </>
   )
 }
