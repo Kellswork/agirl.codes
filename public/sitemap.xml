@@ -4,15 +4,19 @@
     <loc>https://www.agirl.codes</loc>
   </url>
   <url>
-    <loc>https://www.agirl.codes/post/4-new-es2021(es12)-features-javascript-developers-need-to-know</loc>
+    <loc>https://www.agirl.codes/4-new-es2021(es12)-features-javascript-developers-need-to-know</loc>
     <lastmod>2020-11-22</lastmod>
   </url>
   <url>
-    <loc>https://www.agirl.codes/post/how-to-build-forms-with-multiple-input-fields-using-react-hooks</loc>
+    <loc>https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks</loc>
     <lastmod>2020-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.agirl.codes/post/how-to-check-if-an-object-is-empty-in-javascript</loc>
+    <loc>https://www.agirl.codes/how-to-check-if-an-object-is-empty-in-javascript</loc>
+    <lastmod>2021-03-30</lastmod>
+  </url>
+    <url>
+    <loc>https://www.agirl.codes/complete-guide-build-react-form-with-usestate-hook</loc>
     <lastmod>2021-03-30</lastmod>
   </url>
 </urlset>

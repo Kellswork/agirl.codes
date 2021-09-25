@@ -13,7 +13,7 @@ export default (req, res) => {
   const url = `https://${DATA_CENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`
 
   const data = {
-    email_ddress: email,
+    email_address: email,
     status: 'subscribed'
   }
 
@@ -23,7 +23,6 @@ export default (req, res) => {
       Authorization: `api_key ${API_KEY}`
     }
   }
-
   axios
     .post(url, data, options)
     .then((response) => {
@@ -33,11 +32,11 @@ export default (req, res) => {
           error: `There was an error subscribing to the newsletter. Shoot me an email at ogbonnakell@gmail and I'll add you to the list.`
         })
       }
-      return res.status(201).json({ error: null })
+      return res.status(201).json({ message: 'success' })
     })
     .catch((error) => {
       console.log(error)
-      return res.status(500).json({ error: error.message || error.toString() })
+      return res.status(500).json({ error: error.message })
     })
     
 }

@@ -25,6 +25,7 @@ const SubFormContainer = styled.div`
   display: flex;
   width: 100%;
   box-sizing: border-box;
+  align-items: center;
   @media (max-width: 531px) {
     width: 100%;
     display: block;
@@ -37,24 +38,22 @@ const SubFormContainer = styled.div`
     justify-content: space-between;
     font-size: 16px;
     @media (max-width: 531px) {
-      width: 70%;
       display: block;
     }
   }
   .form-input input {
     outline: #f9fafb;
     display: block;
-    width: 41%;
+    width: 100%;
     background-color: #f9fafb;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 4px;
     border: 1px solid #6a4feb2e;
-    @media (max-width: 680px) {
-      width: 40%;
-    }
+    font-size: 16px;
+
     @media (max-width: 531px) {
       width: 100%;
       margin-bottom: 10px;
@@ -80,11 +79,15 @@ const SubFormContainer = styled.div`
       margin-left: 0;
     }
   }
-`
 
+`
+const SuccessState = styled.p`
+    color: #087d07;
+    padding-top: 20px;
+
+`
 function Subscribe() {
   const [email, setEmail] = useState('')
-  const [firstName, setFirstName] = useState('')
   const [state, setState] = useState('idle')
   const [errorMsg, setErrorMsg] = useState(null)
 
@@ -94,10 +97,12 @@ function Subscribe() {
     setState('Loading')
 
     try {
-      const response = await axios.post('api/subscribe', { email })
+      const response = await axios.post('/api/subscribe', { email })
       console.log(response)
       setState('Success')
+      setEmail('')
     } catch (e) {
+      console.log(e.response.data.error)
       setErrorMsg(e.response.data.error)
       setState('Error')
     }
@@ -108,7 +113,7 @@ function Subscribe() {
       <h4 className="sub-header">Subscribe to the newsletter</h4>
       <p className="sub-text">
         Get to notified on quality articles about frontend development and more
-        sent to your inbox. I'll send you a an email once a month, no spam.
+        sent to your inbox. I'll send you an email once a month, no spam.
       </p>
       <form onSubmit={subscribe}>
         <SubFormContainer>
@@ -118,22 +123,14 @@ function Subscribe() {
               id="email-input"
               name="email"
               type="email"
-              placeholder="Email Address"
+              placeholder="What's your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              id="first-name"
-              name="first-name"
-              type="text"
-              placeholder="First Name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className="sub-form-btn">
             <button
-              disabled={state === 'loading'}
+              disabled={state === 'Loading'}
               type="submit"
               className="form-btn"
               onClick={subscribe}
@@ -141,8 +138,11 @@ function Subscribe() {
               Subscribe
             </button>
           </div>
-          
         </SubFormContainer>
+        {state === 'Error' && <p className="error-state">{errorMsg}</p>}
+        {state === 'Success' && (
+          <SuccessState>Awesome, you've been subscribed!</SuccessState>
+        )}
       </form>
     </SubscribeContainer>
   )
