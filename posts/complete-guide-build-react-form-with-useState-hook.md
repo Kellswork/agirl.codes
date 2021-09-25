@@ -347,6 +347,6 @@ In this tutorial, I covered;
 - how to retrieve the form data and pass it as props to another component.
 - Create a React functional component that takes the form data as props and renders it to the browser.
 
-To view the full project code, here's a link to [Github repository](https://github.com/Kellswork/contact-info).
+> To view the full project code, link to [Github repository](https://github.com/Kellswork/contact-info).
 
 Discuss on [medium]()

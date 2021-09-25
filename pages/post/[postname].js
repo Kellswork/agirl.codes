@@ -76,8 +76,10 @@ const MainDiv = styled.div`
 
     @media (max-width: 1040px) {
       margin: 0 auto;
+      width: 75%;
+    }
+    @media (max-width: 890px) {
       width: 90%;
-
     }
     @media (max-width: 560px) {
       width: 100%;
