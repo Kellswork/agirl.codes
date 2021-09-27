@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.agirl.codes/sitemap.xml
+
+Disallow: /api/*
