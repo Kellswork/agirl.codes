@@ -3,7 +3,7 @@ title: '4 new ES2021(ES12) features javascript developers need to know'
 date: 13-06-2021
 fullDate: Sunday, 13 June 2021
 tags: JavaScript, ES2021
-description: 'These new Javascript features have reached final stage of the Ecmascript proposal and are included in the latest draft. It will be published between June 2021 and jul 2021. For now, they can only be used with Babel.'
+description: 'These new Javascript features have reached final stage of the Ecmascript proposal and are included in the latest draft. It will be published between June 2021 and Jul 2021.'
 image: '/posts-images/es2021.jpg'
 ---
 

@@ -5,7 +5,6 @@ import { DateTime } from 'luxon'
 const DivList = styled.div`
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 10px 10px 10px 20px;
   @media (max-width: 640px) {
     width: 94%;
     margin: 0 auto;
@@ -67,7 +66,6 @@ const PostData = styled.div`
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-  console.log((posts[1].frontmatter.date))
 
   const postDataSortByDate = posts.sort((a, b) => {
     const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'm-d-yyyy')
@@ -84,7 +82,7 @@ export default function PostList({ posts }) {
           return (
             <DivList key={post.slug}>
               <div className="post-image"></div>
-              <Link href={{ pathname: `/post/${post.slug}` }}>
+              <Link href={{ pathname: `/${post.slug}` }}>
                 <PostTitle>{post.frontmatter.title}</PostTitle>
               </Link>
               <PostData>

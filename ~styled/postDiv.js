@@ -46,8 +46,8 @@ export const PostDiv = styled.div`
   .markdown-content {
     padding: 16px 32px 32px;
     box-sizing: border-box;
-    max-width: 760px;
-    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    max-width: 768px;
+    --tw-shadow: 0 0px 25px -5px rgba(0, 0, 0, 0.1),
       0 10px 10px -5px rgba(0, 0, 0, 0.04);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -58,7 +58,7 @@ export const PostDiv = styled.div`
       width: 90%;
       overflow-x: scroll;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 560px) {
       width: 100%;
       padding: 0px;
       padding: 8px 16px 16px 16px;
@@ -112,4 +112,5 @@ export const PostDiv = styled.div`
       padding-left: 10px;
     }
   }
+
 `;
