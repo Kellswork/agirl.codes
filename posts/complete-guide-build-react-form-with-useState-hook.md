@@ -1,9 +1,9 @@
 ---
 title: 'The complete guide to building React forms with useState Hook'
-date: 26-09-2021
-fullDate: Sunday, 19 September 2021
+date: 27-09-2021
+fullDate: Monday, 27 September 2021
 tags: React forms, React Hooks
-image: ../../posts-images/signup-form.png
+image: ../../posts-images/react-forms/guide-build-react-forms-with-useState Hook.jpg
 description: "This tutorial teaches how to build forms in react with uesState hook, how to pass the data as props to another react component and have it rendered to the browser"
 ---
 
@@ -348,5 +348,3 @@ In this tutorial, I covered;
 - Create a React functional component that takes the form data as props and renders it to the browser.
 
 > To view the full project code, link to [Github repository](https://github.com/Kellswork/contact-info).
-
-Discuss on [medium]()
