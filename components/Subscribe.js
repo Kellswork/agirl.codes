@@ -73,19 +73,31 @@ const SubFormContainer = styled.div`
       background: #7f5bd5b0;
       color: #ff0;
       cursor: pointer;
+
+      /* :disabled {
+        background: #636262;
+    color: #cbced0;
+      } */
+      :disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
     }
     @media (max-width: 531px) {
       margin-top: 10px;
       margin-left: 0;
     }
   }
-
 `
 const SuccessState = styled.p`
-    color: #087d07;
-    padding-top: 20px;
-
+  color: #087d07;
+  padding-top: 20px;
 `
+const ErrorState = styled.p`
+  color: #b00020;
+  padding-top: 20px;
+`
+
 function Subscribe() {
   const [email, setEmail] = useState('')
   const [state, setState] = useState('idle')
@@ -139,7 +151,9 @@ function Subscribe() {
             </button>
           </div>
         </SubFormContainer>
-        {state === 'Error' && <p className="error-state">{errorMsg}</p>}
+        {state === 'Error' && (
+          <ErrorState className="error-state">{errorMsg}</ErrorState>
+        )}
         {state === 'Success' && (
           <SuccessState>Awesome, you've been subscribed!</SuccessState>
         )}
