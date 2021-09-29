@@ -23,7 +23,7 @@ npx create-react-app contact-info
 
 Get rid of everything you don't need, here's a link to what my app looks like after getting rid of content and files I don't need; [Cleanup application](https://github.com/Kellswork/contact-info/tree/cleanup-application)
 
-In the src folder, create a file `src/components/ContactForm.jsx`, this componenet  contains the code to build the form.
+In the src folder, create a file `src/components/ContactForm.jsx`, this component  contains the code to build the form.
 
 
 ```jsx
@@ -88,7 +88,7 @@ export default App;
 ```
 ### 2. Converting JSX Form to a Controlled Form with React Hooks
 
-Now that we have a simple form being rendered on the browser, we are going to convert the form input state to be controlled by React. By default, forms handle their own state. Converting the form to a controlled state is telling React to take over the form state from the browser with the following ways;
+Now that we have a simple form being rendered on the browser, we are going to convert the form input state to be controlled by React. By default, forms handle their own state. Converting the form to a controlled state is telling React to take over the form state from the browser in the following ways;
 
 - Creating a `state` object to store the form data. React uses the `useState hook` to handle the form state.
 - Add the `value` property to the form, and assign it to the `state` object properties.
@@ -223,7 +223,7 @@ in this phase, you learn how to pass data from parent component to child compone
 
 Now that we have our form data, let's display this data in `ContactList.jsx`.
 
-Before that, let's create a `contacts` state in `App.js` to store each `contactInfo` object data gotten from `ContactForm.jsx`. It's serves as a data storage.
+Before that, let's create a `contacts` state in `App.js` to store each `contactInfo` object data gotten from `ContactForm.jsx`. It serves as data.
 This `contacts` state will be passed as props to the `ContactList.jsx` component.
 
 Navigate to App.js and create a `contacts` state using `useState` React Hook and set it to an empty array.
@@ -256,7 +256,7 @@ function App() {
 export default App;
 ```
 
-Using object [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) in javascript, get `addContact` from props, Update the `handleSubmit` function so instead of logging the data to the console, pass it as a parameter to the addContact function like so.
+Using object [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) in javascript, get `addContact` from props, Update the `handleSubmit` function so instead of logging the data to the console, pass it as a parameter to the addContact function.
 
 ```jsx
 import { useState } from "react";
@@ -274,7 +274,7 @@ const handleSubmit = (event) => {
 
 When you submit the form, the `contacts` state is updated with the new form state.
 
-Now that we have an array of contacts, let's display each conctact info in a `ContacList` component.
+Now that we have an array of contacts, let's display each contact info in a `ContactList` component.
 
 #### Pass `Contacts` state data as props to a React component.
 
@@ -310,11 +310,9 @@ function App() {
 export default App;
 ```
 
-Navigate to `src/ContactList.jsx`
+Navigate to `src/ContactList.jsx`, retrieve the props data passed into the component using destructing as we did for `ContactForm.jsx`.
 
-Rretrieve the props data passed into the component using destructing as we did for `ContactForm.jsx`.
-
-Due to `contacts` data being an array, we need a way to display each `contact` detail.  I'm using `Array.prototype.map()` to loop through each value in and setting the `key` attribute  value to `phone number` because it is garanteed to be unique. The `key` attribute is how React keeps track of the values in the array.
+Due to `contacts` data being an array, we need a way to display each `contact` detail.  I'm using `Array.prototype.map()` to loop through each value in and setting the `key` attribute  value to `phone number` because it is guaranteed to be unique. The `key` attribute is how React keeps track of the values in the array.
 
 the `<p>` tag is used to display `name`, `email` and `phone number` of each contact object
 
@@ -349,3 +347,5 @@ In this tutorial, I covered;
 - Create a React functional component that takes the form data as props and renders it to the browser.
 
 > To view the full project code, link to [Github repository](https://github.com/Kellswork/contact-info).
+
+Discuss on [Medium](https://medium.com/@agirlcodes/the-complete-guide-to-building-react-forms-with-usestate-hook-e3d282ff0025)
