@@ -104,9 +104,7 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>
-  // let subPath = getStaticPaths.paths
-  // console.log(subPath)
-  console.log(frontmatter.url)
+
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
