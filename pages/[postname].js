@@ -104,9 +104,9 @@ const renderers = {
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>
-  let blogPostTitle = frontmatter.title.split(' ').join('-')
   // let subPath = getStaticPaths.paths
   // console.log(subPath)
+  console.log(frontmatter.url)
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
@@ -123,14 +123,14 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta name="description" content={frontmatter.description} />
         <meta
           property="og:url"
-          content={`https://agirl.codes/post/${blogPostTitle}`}
+          content={`https://www.agirl.codes${frontmatter.url}`}
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />
         <meta
           property="og:image"
-          content={`https://www.agirl.codes${frontmatter.image}`}
+          content={`https://www.agirl.codes$/{frontmatter.image}`}
         />
         <meta name="description" content={frontmatter.description}></meta>
         <meta name="twitter:card" content="summary_large_image" />

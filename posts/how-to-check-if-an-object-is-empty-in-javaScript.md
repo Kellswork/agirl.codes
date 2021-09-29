@@ -5,6 +5,7 @@ fullDate: Sunday, 30 March 2021
 tags: JavaScript
 description: 'In this article, I will be sharing 6 different javascript methods you can use to check if an object is empty or not'
 image: '/posts-images/social-media-header.jpg'
+url: '/how-to-check-if-an-object-is-empty-in-javascript'
 ---
 
 

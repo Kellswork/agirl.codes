@@ -5,7 +5,7 @@ fullDate: Monday, 27 September 2021
 tags: React forms, React Hooks
 image: ../../posts-images/react-forms/guide-build-react-forms-with-usestate-hook.jpg
 description: "This tutorial teaches how to build forms in react with uesState hook, how to pass the data as props to another react component and have it rendered to the browser"
-url: 
+url: '/complete-guide-build-react-forms-with-usestate-hook'
 ---
 
 In this tutorial, You'll learn how to build forms with one or more input fields using JSX, understand how a html uncontrolled form transforms to a React controlled state form, retrieve the form data when submitted and save it to state using useState hook and finally, pass form data as props to a component and have the component render the data on the browser.

@@ -5,6 +5,7 @@ fullDate: Sunday, 22 November 2020
 tags: React
 image: ../../posts-images/signup-form.png
 description: 'In this article, I will show you how to use React Hook to build forms with multiple input fields.'
+url: '/how-to-build-forms-with-multiple-input-fields-using-react-hooks'
 ---
 
 Forms can be considered as the backbone of web applications. How would you get any information from your users without forms? Yes, there are libraries available to easily build forms now ( a nice one is Formik) but having an understanding of how to create forms in React from scratch is beneficial, It's pretty easy.
