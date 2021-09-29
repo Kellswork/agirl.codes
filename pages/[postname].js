@@ -128,7 +128,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta property="og:description" content={frontmatter.description} />
         <meta
           property="og:image"
-          content={`https://www.agirl.codes/${frontmatter.image}`}
+          content={`https://www.agirl.codes${frontmatter.image}`}
         />
         <meta name="description" content={frontmatter.description}></meta>
         <meta name="twitter:card" content="summary_large_image" />
