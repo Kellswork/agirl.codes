@@ -3,7 +3,7 @@ title: 'The complete guide to building React forms with useState Hook'
 date: 27-09-2021
 fullDate: Monday, 27 September 2021
 tags: React forms, React Hooks
-image: ../../posts-images/react-forms/guide-build-react-forms-with-useState Hook.jpg
+image: ../../posts-images/react-forms/guide-build-react-forms-with-usestate-hook.jpg
 description: "This tutorial teaches how to build forms in react with uesState hook, how to pass the data as props to another react component and have it rendered to the browser"
 ---
 
