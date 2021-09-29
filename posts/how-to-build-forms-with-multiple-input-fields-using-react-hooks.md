@@ -1,5 +1,5 @@
 ---
-title: 'how to build forms with multiple input fields using react hooks'
+title: 'How to Build Forms with Multiple Input Fields using React Hooks'
 date: 22-11-2020
 fullDate: Sunday, 22 November 2020
 tags: React

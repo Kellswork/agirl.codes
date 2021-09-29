@@ -18,7 +18,6 @@ const MainDiv = styled.div`
 
   h1 {
     font-size: 2.25rem;
-    text-transform: capitalize;
     margin-left: 25%;
     box-sizing: border-box;
     max-width: 760px;
@@ -106,7 +105,8 @@ const renderers = {
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>
   let blogPostTitle = frontmatter.title.split(' ').join('-')
-
+  // let subPath = getStaticPaths.paths
+  // console.log(subPath)
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
