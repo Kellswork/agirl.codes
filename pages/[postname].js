@@ -141,6 +141,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         <meta name="twitter:creator" content="@kelly_perrie" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
+          rel="canonical"
+          href={`https://www.agirl.codes${frontmatter.url}`}
+        ></link>
+        <link
           rel="icon"
           type="image/png"
           sizes="96x96"

@@ -20,14 +20,13 @@ const LayoutContainer = styled.div`
       margin-right: 0px;
       margin: 0 auto;
     }
-
   }
   .post-content {
     max-width: 768px;
     box-sizing: border-box;
     margin-top: 8px;
     margin-left: 30px;
-    
+
     @media (max-width: 900px) {
       margin: 0 auto;
       width: 96%;
@@ -40,7 +39,6 @@ const LayoutContainer = styled.div`
     }
   }
   .sub-layout {
-
   }
 `
 
@@ -77,6 +75,7 @@ export default function Layout({
         <meta name="twitter:site" content="@kelly_perrie" />
         <meta name="twitter:creator" content="@kelly_perrie" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.agirl.codes" />
         <link
           rel="icon"
           type="image/png"
@@ -90,25 +89,25 @@ export default function Layout({
         ></link>
         <title>{pageTitle}</title>
       </Head>
-        <LayoutContainer>
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5QKRS"
+      <LayoutContainer>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5QKRS"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>`
-            }}
-          />
-          <Nav />
-          <div className="layout-content">
-            <Header />
-            <section className="post-content">
-              <div className="content">{children}</div>
-              <div className="sub-layout">
-                <Subscribe />
-              </div>
-            </section>
-          </div>
-        </LayoutContainer>
-        <Footer />
+          }}
+        />
+        <Nav />
+        <div className="layout-content">
+          <Header />
+          <section className="post-content">
+            <div className="content">{children}</div>
+            <div className="sub-layout">
+              <Subscribe />
+            </div>
+          </section>
+        </div>
+      </LayoutContainer>
+      <Footer />
     </>
   )
 }
