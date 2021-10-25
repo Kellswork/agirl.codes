@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
@@ -68,7 +67,7 @@ const MainDiv = styled.div`
   .markdown-content img {
     width: 100%;
   }
-  .sub-div{
+  .sub-div {
     width: 75%;
     margin-left: 25%;
     margin-top: 30px;
@@ -171,14 +170,12 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                 <p>
                   <PostTag>{frontmatter.tags}</PostTag>
                 </p>
-                <Link href="/">
-                  <p className="sidebar-backlink">
-                    <img src="/back-arrow-1767531.svg" alt="back arrow" />
-                    <a href="/" className="back-btn">
-                      Back to post
-                    </a>
-                  </p>
-                </Link>
+                <p className="sidebar-backlink">
+                  <img src="/back-arrow-1767531.svg" alt="back arrow" />
+                  <a href="/" className="back-btn">
+                    Back to post
+                  </a>
+                </p>
               </div>
             </aside>
             <div className="markdown-content">
@@ -187,8 +184,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           </PostDiv>
         </div>
       </article>
-      
-      <div className='sub-div'>
+
+      <div className="sub-div">
         <Subscribe />
       </div>
     </MainDiv>

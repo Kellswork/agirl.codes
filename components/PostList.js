@@ -1,5 +1,5 @@
-import Link from "next/link";
-import styled from "styled-components";
+import Link from 'next/link'
+import styled from 'styled-components'
 import { DateTime } from 'luxon'
 
 const DivList = styled.div`
@@ -9,7 +9,7 @@ const DivList = styled.div`
     width: 94%;
     margin: 0 auto;
   }
-`;
+`
 const PostTitle = styled.a`
   font-size: 1.7rem;
   line-height: 1.3;
@@ -25,15 +25,15 @@ const PostTitle = styled.a`
     color: #4a5568ba;
   }
   &:active {
-   color: #034282;
+    color: #034282;
   }
   @media (max-width: 760px) {
-      font-size: 1.5rem;
-    }
-    @media ( max-width: 540px) {
-      font-size: 1.2rem;
-    }
-`;
+    font-size: 1.5rem;
+  }
+  @media (max-width: 540px) {
+    font-size: 1.2rem;
+  }
+`
 export const PostTag = styled.span`
   padding: 4px 6px;
   background: #7f5bd5b0;
@@ -42,7 +42,7 @@ export const PostTag = styled.span`
   font-size: 14px;
   margin-right: 10px;
   margin-left: 8px;
-`;
+`
 const PostDate = styled.span`
   padding: 4px 6px;
   background: #fbfc1b;
@@ -50,7 +50,7 @@ const PostDate = styled.span`
   border-radius: 10px;
   font-size: 14px;
   margin-left: 8px;
-`;
+`
 const PostText = styled.p`
   color: #2d3748;
   line-height: 1.6;
@@ -58,14 +58,14 @@ const PostText = styled.p`
   border-bottom: 2px solid;
   --tw-border-opacity: 1;
   border-bottom-color: rgba(243, 244, 246, var(--tw-border-opacity));
-`;
+`
 const PostData = styled.div`
   margin-bottom: 12px;
   margin-top: 6px;
-`;
+`
 
 export default function PostList({ posts }) {
-  if (posts === "undefined") return null;
+  if (posts === 'undefined') return null
 
   const postDataSortByDate = posts.sort((a, b) => {
     const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'm-d-yyyy')
@@ -83,7 +83,9 @@ export default function PostList({ posts }) {
             <DivList key={post.slug}>
               <div className="post-image"></div>
               <Link href={{ pathname: `/${post.slug}` }}>
-                <PostTitle>{post.frontmatter.title}</PostTitle>
+                <PostTitle href={`/${post.slug}`}>
+                  {post.frontmatter.title}
+                </PostTitle>
               </Link>
               <PostData>
                 <PostTag>{post.frontmatter.tags}</PostTag>
@@ -93,8 +95,8 @@ export default function PostList({ posts }) {
               </PostData>
               <PostText>{post.frontmatter.description}</PostText>
             </DivList>
-          );
+          )
         })}
     </div>
-  );
+  )
 }
