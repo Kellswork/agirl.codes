@@ -8,9 +8,10 @@ export default async (req, res) => {
   }
 
   const API_KEY = process.env.MAILCHIMP_API_KEY
+  const API_SERVER = process.env.MAILCHIMP_API_SERVER
   const LIST_ID = process.env.MAILCHIMP_AUDIENCE_ID
-  const DATA_CENTER = process.env.MAILCHIMP_API_KEY.split('-')[1]
-  const url = `https://${DATA_CENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`
+
+  const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`
 
   const data = {
     email_address: email,
@@ -37,6 +38,8 @@ export default async (req, res) => {
     return res.status(500).json({ error: error.message })
   }
 }
+
+// mailchimp add member to list: https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/
 //steps:
 // get mailchimp api key, audience id,
 // install axios and setup  post request using async
