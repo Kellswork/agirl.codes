@@ -35,7 +35,6 @@ export default function Register() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("user created", user);
   };
   return (
     <form onSubmit={handleSubmit}>
