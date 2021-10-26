@@ -12,7 +12,7 @@ In this tutorial, You'll learn how to build forms with one or more input fields 
 
 The project we will be building is a Contact form with three input fields for the contact's name, email, and phone number. when the form is submitted, the form data will be saved in a contacts state and passed to a contact list component, where it is rendered to the browser. 
 
-If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirl.codes/post/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused or for anyone who wants to refresh their knowledge on react building React forms with useState hook.
+If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused or for anyone who wants to refresh their knowledge on react building React forms with useState hook.
 
 ### 1. Build a simple React form with multiple input fields
 

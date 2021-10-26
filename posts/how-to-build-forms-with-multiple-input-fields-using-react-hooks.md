@@ -96,3 +96,6 @@ Validation should never be skipped because you should never trust that the user 
 Now that you understand how forms are built with React Hooks, you can choose to either build forms using a form helper or using React hooks.
 
 > The code for the Signup form can be found here [codesandbox.io](https://codesandbox.io/s/how-to-build-forms-with-multiple-input-fields-using-react-hooks-2c7dt?file=/src/styles.css)
+
+
+For a more in-depth beginner guide on how to build forms with multiple input fields -  [The Complete Guide to Building React Forms with useState Hook](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
