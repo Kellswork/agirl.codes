@@ -16,6 +16,7 @@ const MainDiv = styled.div`
   margin-bottom: 5%;
 
   h1 {
+    text-align: center;
     font-size: 2.25rem;
     margin-left: 25%;
     box-sizing: border-box;
@@ -26,7 +27,6 @@ const MainDiv = styled.div`
     padding-bottom: 16px;
     @media (max-width: 1040px) {
       margin: 0 auto;
-      text-align: center;
     }
     @media (max-width: 760px) {
       font-size: 1.8rem;

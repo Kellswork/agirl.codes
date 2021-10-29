@@ -9,9 +9,9 @@ export default async (req, res) => {
 
   const API_KEY = process.env.MAILCHIMP_API_KEY
   const API_SERVER = process.env.MAILCHIMP_API_SERVER
-  const LIST_ID = process.env.MAILCHIMP_AUDIENCE_ID
+  const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID
 
-  const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`
+  const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`
 
   const data = {
     email_address: email,
