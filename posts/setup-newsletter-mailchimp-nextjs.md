@@ -228,7 +228,7 @@ Be sure to test your subscription form in the production environment. While my s
 
 To view the complete code, checkout out my blog source code on [GitHub](https://github.com/Kellswork/agirl.codes/blob/main/pages/api/subscribe.js).
 
-I hope this article was helpful. If you have any questions or comments, do share on [medium](add link to article on medium)
+I hope this article was helpful. If you have any questions or comments, do share on [medium](https://medium.com/@agirlcodes/setup-a-newsletter-with-next-js-and-mailchimp-d9933cfd785e)
 
 **Articles you might find helpful**
 
