@@ -1,8 +1,8 @@
 ---
 title: 'Setup a Newsletter with Next.js and Mailchimp'
 date: 29-10-2021
-fullDate: Friday, 26 October 2021
-tags: Next JS
+fullDate: Friday, 29 October 2021
+tags: Next JS, React
 description: 'In this tutorial, you will learn how to set up a Newsletter on your Next Js blog with Mailchimp.'
 image: '/posts-images/next-mailchimp.jpg'
 url: '/setup-newsletter-mailchimp-nextjs'
