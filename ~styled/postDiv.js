@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const PostDiv = styled.div`
   width: 100%;
@@ -37,17 +37,16 @@ export const PostDiv = styled.div`
         }
         .back-btn {
           text-decoration: none;
-          color: #076ff3
+          color: #076ff3;
         }
       }
-      
     }
   }
   .markdown-content {
     padding: 16px 32px 32px;
     box-sizing: border-box;
     max-width: 768px;
-    --tw-shadow: 0 0px 25px -5px rgba(0, 0, 0, 0.1),
+    --tw-shadow: 0 0px 15px -5px rgba(0, 0, 0, 0.1),
       0 10px 10px -5px rgba(0, 0, 0, 0.04);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -67,22 +66,24 @@ export const PostDiv = styled.div`
     h3 {
       font-size: 1.4rem;
       font-weight: 600;
-      padding-top: 30px;
+      padding-top: 24px;
       padding-bottom: 12px;
     }
     h4 code {
-      color: #D929FF;
+      color: #d929ff;
     }
     p {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
       pre {
         border-radius: 4px;
       }
       code {
-        padding: 2px 4px;
+        padding: 2px 6px;
         border-radius: 2px;
         color: #d929ff;
+        background-color: #e8e3e9;
+        letter-spacing: 1.1px;
       }
       em {
         font-style: italic;
@@ -90,12 +91,13 @@ export const PostDiv = styled.div`
       }
     }
     ul {
-      list-style: disc ;
+      list-style: disc;
       padding-left: 20px;
     }
     a,
     a:visited {
       color: #076ff3;
+      text-decoration: none;
     }
 
     a:hover,
@@ -112,5 +114,4 @@ export const PostDiv = styled.div`
       padding-left: 10px;
     }
   }
-
-`;
+`
