@@ -1,13 +1,14 @@
 module.exports = {
-  target: "serverless",
+  target: 'serverless',
   webpack: function (config, { isServer }) {
     if (isServer) {
     }
     config.module.rules.push({
       test: /\.md$/,
-      use: "raw-loader",
-    });
+      use: 'raw-loader'
+    })
 
-    return config;
+    return config
   },
-};
+  generateBuildId: () => 'build'
+}
