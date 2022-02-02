@@ -15,9 +15,6 @@ In this tutorial, you will learn how to set up a Newsletter on your Next Js blog
 ### Why Mailchimp?
 MailChimp is a popular online marketing tool that you can use to manage your email list when you start getting subscribers. They have a free version for people with 2000 contacts or less. It's good enough for people beginning their newsletter journey.
 
-### Get started with Next Js
-Next Js makes building APIs so simple. All you need is to create a `pages/api` folder, Next Js will map any file inside to `/api/*` and it becomes an endpoint instead of a page.
-
 ### Mailchimp Setup
 To get started, [create an account with Mailchimp](https://mailchimp.com/help/create-an-account/). When a user subscribes to your newsletter, the email address is added to your `Audience`. Mailchimp gives you `API Keys` that you can use in other apps to access your account.
 
@@ -27,12 +24,25 @@ To connect to the API we will need three environmental variables from Mailchimp;
 - [API Server](https://mailchimp.com/developer/marketing/guides/quick-start/#make-your-first-api-call)
 - [Audience Id](https://mailchimp.com/help/find-audience-id/)
 
-### Setup environmental variables for development and production
-It's best practice to store environmental variables in `.env` files, do not push your environmental variables to your remote branch. remember to add the `.env.local` file to .gitignore.
+
+### Get started with Next Js
+
+We will need a form to collect the user’s email and an API that will receive the form submission and save the email on Mailchimp. Luckily, NextJs provides us with the ability to do both without creating a separate backend application using NodeJs.
+
+All we need to create a simple API is to create a pages/api folder in our next Js application. Next Js will map any file inside to /api/* directory and it will becomes an endpoint instead of a page.
+
+We can now begin by creating a fresh NextJs application by running the following command.
+
+```js
+npx create-next-app@latest
+```
+
+### Setup environment variables for development and production
+It's best practice to store environment variables in `.env` files, do not push your environment variables to your remote branch. remember to add the `.env.local` file to .gitignore.
 
 **Local Setup**
 
-Create a `.env.local` file
+Create a `.env.local` file. file in the root folder of your next js application. Place your environment variables in that file:
 ```js
 MAILCHIMP_API_KEY="your-mailchimp-api-key"
 MAILCHIMP_AUDIENCE_ID="your-mailchimp-audience-id"
@@ -49,7 +59,7 @@ I have my blog app deployed on Netlify.
 
 ### Create Server-side API request
 
-Create `pages/api/subscribe.js` 
+Create `pages/api/subscribe.js` and paste the following code inside it: 
 
 ```jsx
 import axios from 'axios'
@@ -93,29 +103,33 @@ export default async (req, res) => {
   }
 }
 ```
-Install [axios](https://www.npmjs.com/package/axios), import it in `subscribe.js`. I love how simple it is to use axios to make API requests. I'm using axios to make a post request to the [Mailchimp marketing API](https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/).
+[Axios](https://www.npmjs.com/package/axios) provides a simple and clean way for us to make API requests. We are importing it inside the `subscribe.js` file because we will use it to make a post request to the [Mailchimp marketing API](https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/). Be sure to install it using the following command:
 
-Create an async function that takes a `request` and `response` as parameters.
+```js
+npx install axios
+```
 
-the If block adds a validation check so that the email request body isn't an empty string.
+We are creating an async function that takes a `request` and `response` as parameters. This is the function that handles our API request.
+
+The If block adds a validation check so that the email request body isn't an empty string.
 
 Use `process.env` to grab the env variables, update the Mailchimp URL with the env variable.
 
 Create a data object containing the email address and a subscribed status. An `option` object that tells the content type and sets the authorisation header to your `api_key`.
 
-The code in the try block makes a post request to the URL endpoint using axois with the data and options passed in as parameters. 
+The code in the `try block` makes a post request to the URL endpoint using axois with the data and options passed in as parameters. 
 
-if the email input field is empty or invalid, a 400(bad request
+If the email input field is empty or invalid, a 400(bad request
 ) status error response is returned, else a 201(created) status response is returned. In case of any other errors, a 500 server error is returned. 
 
-**Note**: It's important to be sure of the arguments Mailchimp API takes. while working on this, I added a `first name` input field to the data object and the API kept returning a 500 server error. I studied what the Mailchimp API takes in as arguments and that solved the server response problem for me. That is after trying to get a form field for `first name` and `email` to work. The moral of this part is to be sure of the data structure the  API will need before creating the frontend UI for it.
+**Note**: It's important to be sure of the arguments Mailchimp API takes. While working on this, I added a `first name` input field to the data object and the API kept returning a 500 server error. I studied what the Mailchimp API takes in as arguments and that solved the server response problem for me. That is after trying to get a form field for `first name` and `email` to work. The moral of this part is to be sure of the data structure the  API will need before creating the frontend UI for it.
 
 To add additional params, [see the full list of available params](https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/).
 
 ### Create Newsletter form component
- Now we have an API that takes an email and submits it to Mailchimp API. Let's create the client-side UI where user can input their email to subscribe. I used `styled-components` to styling the form component.
+ Now we have an API that takes an email and submits it to Mailchimp API. Let's create the client-side UI where user can input their email to subscribe. I used `styled-components` for styling the form component.
 
-create a `Subscribe.js` file in `src/components` folder.
+Create a `Subscribe.js` file in `src/components` folder with the following code:
 
 ```jsx
 
@@ -187,17 +201,17 @@ export default Subscribe
 
 ```
 
-I created three state variables;
-- email state 
-- a loading state
-- an error state
+In this component, I am creating three state variables:
+- email 
+- loading
+- error
 
 When a user clicks the `Subscribe button`, *Subscribe function* is called.
-the state is set to Loading while the request is being made to the API.
+The state is set to `Loading` while the request is being made to the API.
 
-based on the response we get, the state is either set to Success for a successful submission or Error and returns an error message.
+Based on the response we get, the state is either set to `Success` for a successful submission or `Error` and returns an error message.
 
-While waiting for the server response, the state is set to Loading, the button is set to `disabled`. I did this to prevent users from clicking the button again and as a way to let them know their request is processing.
+While waiting for the server response, the state is set to `Loading`, the button is set to `disabled`. I did this to prevent users from clicking the button again and as a way to let them know their request is processing.
 
 ```jsx
 
@@ -213,7 +227,7 @@ While waiting for the server response, the state is set to Loading, the button i
 }
 
 ```
-This displays the API response to the client. If no errors, the email is added to your Mailchimp audience dashboard.
+This displays the API response to the client. If there are no errors, the email is added to your Mailchimp audience dashboard.
 
 ### Fix API route not found in a Next.js App Production Environment.
 
@@ -230,8 +244,8 @@ To view the complete code, checkout out my blog source code on [GitHub](https://
 
 I hope this article was helpful. If you have any questions or comments, do share on [medium](https://medium.com/@agirlcodes/setup-a-newsletter-with-next-js-and-mailchimp-d9933cfd785e)
 
-**Articles you might find helpful**
+*Articles you might find helpful*
 
-[The Complete Guide to Building React Forms with useState Hook](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
+[The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
 
-for a quick overview of how to build forms with react hook, [check this article](https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks).
+For a quick overview of how to build forms with react hook, [check this article](https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks).
