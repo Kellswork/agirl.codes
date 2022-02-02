@@ -34,7 +34,6 @@ const HeaderCard = styled.div`
   }
   .card-occupation {
     background: #7f5bd5b0;
-    border-radius: 10px;
     color: #ff0;
     font-size: 14px;
     padding-bottom: 5px;
@@ -45,7 +44,6 @@ const HeaderCard = styled.div`
     letter-spacing: 1.5px;
     line-height: 1.3;
     padding-bottom: 10px;
-
   }
   .card-image {
     img {
@@ -64,7 +62,7 @@ const HeaderCard = styled.div`
     border-radius: 4px;
 
     .card-details {
-      padding-left: 25px;
+      padding-left: 20px;
     }
     .card-occupation {
       border-radius: 4px;
