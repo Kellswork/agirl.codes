@@ -1,5 +1,5 @@
 ---
-title: 'How to solve storybook test error “cannot find @babel/runtime/helpers/interopRequireDefault”'
+title: 'How to solve storybook test error “cannot find @babel/runtime/helpers/interopRequireDefault.js”'
 date: 22-02-2022
 fullDate: Tuesday, 22 Febuary 2022
 tags: Next JS, React
