@@ -25,6 +25,7 @@ const MainDiv = styled.div`
     font-weight: 600;
     line-height: 1.2;
     padding-bottom: 16px;
+    padding: 0px 10px 0px 10px;
     @media (max-width: 1040px) {
       margin: 0 auto;
     }
@@ -32,6 +33,7 @@ const MainDiv = styled.div`
       font-size: 1.8rem;
       width: 94%;
       margin: 0 auto;
+      line-height: 1.4;
     }
     @media (max-width: 460px) {
       font-size: 1.6rem;
@@ -66,6 +68,7 @@ const MainDiv = styled.div`
   }
   .markdown-content img {
     width: 100%;
+    border-radius: 4px;
   }
   .sub-div {
     width: 75%;

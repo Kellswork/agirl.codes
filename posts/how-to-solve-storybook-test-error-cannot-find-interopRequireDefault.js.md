@@ -1,5 +1,5 @@
 ---
-title: 'How to solve storybook test error “cannot find @babel/runtime/helpers/interopRequireDefault.js”'
+title: 'How to solve Jest storybook test error “cannot find interopRequireDefault.js”'
 date: 22-02-2022
 fullDate: Tuesday, 22 Febuary 2022
 tags: Storybook, Jest
@@ -8,11 +8,11 @@ image: '/posts-images/next-mailchimp.jpg'
 url: '/setup-newsletter-mailchimp-nextjs'
 ---
 
-In this article, I am going to highlight how I got this storybook test error, what I tried to fix the error that didn’t work, and what did work.
+In this article, I am going to highlight how I got this storybook jest snapshot test error, what I tried to fix the error that didn’t work, and what did work.
 
  ![newsletter](/posts-images/failed-storybook-test.png)
 
-### What caused this error?**
+### What caused this error?
 
 I wanted to update my current branch with the master branch. In the process, I encountered a merge conflict with the storybook snapshot test. The incoming test file had been updated with new tests. I accepted both changes without duly reviewing them and that must have caused some data to be repeated or redundant.
 
