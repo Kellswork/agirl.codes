@@ -10,7 +10,7 @@ url: '/setup-newsletter-mailchimp-nextjs'
 
 In this article, I am going to highlight how I got this storybook jest snapshot test error `cannot find @babel/runtime/helpers/interopRequireDefault.js`, what I tried to fix the error that didn’t work, and what did work.
 
- ![newsletter](/posts-images/failed-storybook-test.png)
+ ![failed storybook test](/posts-images/failed-storybook-test.png)
 
 ### What caused this error?
 
@@ -34,7 +34,7 @@ Deleting the Jest cache directory. I added this command to my package.json and r
 
 This clears the cache without running the test. Jest possible had the old snapshot test data cached and didn't know what to do with the new changes. Remove the cache and run the test once more, 
 
- ![newsletter](/posts-images/storybook-test-result.png)
+ ![storybook test result](/posts-images/storybook-test-result.png)
 
  ### Conclusion
 
