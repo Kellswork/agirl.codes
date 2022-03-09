@@ -4,7 +4,7 @@ date: 22-02-2022
 fullDate: Tuesday, 22 Febuary 2022
 tags: Storybook, Jest
 description: 'In this article, I am going to highlight how I got this storybook jest snapshot test error "cannot find @babel/runtime/helpers/interopRequireDefault.js" and  what I did to fix this jest snapshot test  error'
-image: '/posts-images/next-mailchimp.jpg'
+image: '/posts-images/failed-storybook-test.png'
 url: '/how-to-solve-storybook-test-error-cannot-find-interopRequireDefault.js'
 ---
 
