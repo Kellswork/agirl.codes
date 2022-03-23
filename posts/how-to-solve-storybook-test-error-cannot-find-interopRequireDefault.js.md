@@ -18,9 +18,9 @@ I wanted to update my current branch with the master branch. In the process, I e
 
 ### What I tried to fix the issue?
 
-Usually, when I get errors like this that have a `package can't be found` error, I delete and reinstall `node_modules`, `package-lock.json`. In this case, It did not help
+Usually, when I get errors like this that have a `package can't be found` error, I delete and re-install `node_modules`, `package-lock.json`. In this case, It did not help
 
-Next, after some more research, I tried installing  `@babel/runtime` as a dependency to the project based on some StackOverflow recommendation, but that still didn’t fix it.
+Next, after some more research, I tried installing  `@babel/runtime` as a dependency to the project based on some StackOverflow recommendations, but that still didn’t fix it.
 
 ### What Solved the Error?
 
