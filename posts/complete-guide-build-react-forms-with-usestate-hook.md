@@ -349,3 +349,10 @@ In this tutorial, I covered;
 > To view the full project code, link to [Github repository](https://github.com/Kellswork/contact-info).
 
 Discuss on [Medium](https://medium.com/@agirlcodes/the-complete-guide-to-building-react-forms-with-usestate-hook-e3d282ff0025)
+
+
+*Articles you might find helpful*
+
+[Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/how-to-solve-storybook-test-error-cannot-find-interopRequireDefault.js)
+
+[Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes//setup-newsletter-mailchimp-nextjs).

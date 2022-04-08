@@ -39,3 +39,9 @@ This clears the cache without running the test. Jest possible had the old snapsh
  ### Conclusion
 
 Jest stores information in the cache to improve test performance, I suspect the merge with new data must have clashed with the cache data, thereby confusing Jest.
+
+*Articles you might find helpful*
+
+[The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
+
+[Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes//setup-newsletter-mailchimp-nextjs).
