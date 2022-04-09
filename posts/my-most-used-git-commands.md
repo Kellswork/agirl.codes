@@ -4,7 +4,7 @@ date: 08-04-2022
 fullDate: Friday, 8 April 2022
 tags: Git
 description: 'I share git commands I find myself using most often in my day-to-day job as a Software Developer'
-image: '/posts-images/next-mailchimp.jpg'
+image: ''
 url: '/my-most-used-git-commands'
 ---
 
@@ -130,7 +130,8 @@ This creates a new branch from an existing branch and  automatically switches to
 ```
 git checkout -b <branch name>
 ```
-the main will be created from your current branch. Here, I'm in the main branch, so the new branch will be created from main branch.
+![git-checkout-b](/posts-images/git-commands/git-checkout-b.png)
+
 ### Git Merge
 
 I use **git merge** for updating commits present in the parent branch(dev or main ) with my working branch. For example, A colleague worked on a feature branch named `add-navigation`, which has been merged into the **main branch**.
