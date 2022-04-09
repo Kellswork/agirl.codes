@@ -259,5 +259,7 @@ Do share your most used git command list with me on medium(add link to post on m
 
 *Articles you might find helpful*
 
+For a quick overview of how to build forms with react hook, [check this article](https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks).
+
 [Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/how-to-solve-storybook-test-error-cannot-find-interopRequireDefault.js)
 
