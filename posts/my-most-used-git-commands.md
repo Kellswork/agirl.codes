@@ -217,6 +217,10 @@ git reset head <commit hash>
 
 **git rm —cached** command remove files from your local git repository. The —cached flag deletes the file from your git repository, it becomes an untracked file in your project folder. Note you have to commit the changes.
 
+```
+git rm <file Relative path> --cached
+```
+
 ### git stash
 
 Say you are working on a feature branch file and you need to work on something else but don’t want to commit the changes just yet.
