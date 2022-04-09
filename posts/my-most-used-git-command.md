@@ -55,10 +55,30 @@ If you use vscode, the saved changes will move to staged Changes
 
 Another way to check if files have been committed is by typing **git status** in the terminal, the files now highlighted in the green show it has been staged but not committed.
 
-![vscode](/posts-images/git-commands/git-add.png)
+![vscode](/posts-images/git-commands/git-add-all.png)
 
 The third part of the git add command is where we specify the files we want to add. So “--all” and “.” means all files. We could also specify which files want to add by doing: 
 
 ```js
 git add dir/file1.js dir/file2.js
 ```
+![vscode](/posts-images/git-commands/git-add.png)
+
+### Git Commit
+
+This command saves your recent changes in the project’s version control history locally.
+This command can be used in a short format.
+
+**git commit -m <message>**
+
+This option lets you commit your work with a short / one line message
+
+```js
+git commit -m 'update article with pictures'
+```
+
+
+![vscode](/posts-images/git-commands/git-commit-m.png)
+
+**git commit**
+This is the same as the command above, but it opens up a vim editor where you can write longer, better-structured commit messages that support multiple lines.
