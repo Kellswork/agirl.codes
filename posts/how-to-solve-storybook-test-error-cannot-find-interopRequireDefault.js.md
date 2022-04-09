@@ -44,4 +44,4 @@ Jest stores information in the cache to improve test performance, I suspect the 
 
 [The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
 
-[Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes//setup-newsletter-mailchimp-nextjs).
+[Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)
