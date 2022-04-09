@@ -19,14 +19,15 @@ First I will list out my most used git commands, then a small list of the git co
 - git commit
 - git push
 - git pull
-- git merge
 - git checkout
+- git merge
+
 
 #### Git Status
 
 I use this command to check how many files have been changed and have not been committed.
 
-```js
+```
 git status
 ```
 
@@ -55,14 +56,14 @@ If you use vscode, the saved changes will move to staged Changes
 
 Another way to check if files have been committed is by typing **git status** in the terminal, the files now highlighted in the green show it has been staged but not committed.
 
-![vscode](/posts-images/git-commands/git-add-all.png)
+![git-add-all](/posts-images/git-commands/git-add-all.png)
 
 The third part of the git add command is where we specify the files we want to add. So “--all” and “.” means all files. We could also specify which files want to add by doing: 
 
-```js
+```
 git add dir/file1.js dir/file2.js
 ```
-![vscode](/posts-images/git-commands/git-add.png)
+![git-add](/posts-images/git-commands/git-add.png)
 
 ### Git Commit
 
@@ -73,12 +74,80 @@ This command can be used in a short format.
 
 This option lets you commit your work with a short / one line message
 
-```js
+```
 git commit -m 'update article with pictures'
 ```
 
 
-![vscode](/posts-images/git-commands/git-commit-m.png)
+![git-commit-m](/posts-images/git-commands/git-commit-m.png)
 
 **git commit**
+
 This is the same as the command above, but it opens up a vim editor where you can write longer, better-structured commit messages that support multiple lines.
+
+![git-commit](/posts-images/git-commands/git-commit.png)
+
+>  if you want to use the git commit command, learn how to use a to write a message, save and quit the vim editor.Or you can change your git editor of choice to Nano, 
+
+### Git Push
+
+I use this to send locally committed changes to the GitHub remote branch. This ensures that the branch on the remote repository contains all the updates made on the local branch.
+
+```
+git push
+```
+
+![git-push](/posts-images/git-commands/git-push.png)
+
+For newly created local branch, this command is used to set up a remote branch with the same name as the local branch.
+
+```
+git push -u origin <branch_name>
+```
+or the default by git
+
+```
+git push --set-upstream <remote> <branch_name>
+```
+
+### Git Pull
+
+I use **git pull command** to keep my git local repositories content up-to-date with what is currently in the remote repository.
+
+### Git checkout
+
+I use this to switch branches.
+
+```
+git checkout <branch name>
+```
+### Git Merge
+
+I use **git merge** for updating commits present in the parent branch(dev or main ) with my working branch. For example, A colleague worked on a feature branch named `add-navigation`, which has been merged into the **main branch**.
+
+ If I want my feature branch to have the same updates as the **main branch**, I use git merge to transfer commits present in the main branch to the feature branch I’m working on.
+
+ #### How to merge a feature branch into the main branch
+
+make sure you checkout to the `main branch`  and run the **git merge** command.
+
+```
+git checkout main
+git merge <branch name>
+```
+
+#### How to merge the main branch into a feature branch
+
+**git merge** can be used to merge branches in the opposite direction too. When I finish working on a feature branch, I use git merge to add the work done on my feature branch to the main branch.
+
+make sure the **local main** is up to date with the **remote main branch**.
+
+```
+git pull
+```
+checkout to the feature branch and run the git merge command.
+
+```
+git checkout <feature-branch>
+git merge <branch name>
+```
