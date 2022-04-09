@@ -23,7 +23,7 @@ First I will list out my most used git commands, then a small list of the git co
 - git merge
 
 
-#### Git Status
+### Git Status
 
 I use this command to check how many files have been changed and have not been committed.
 
@@ -42,11 +42,11 @@ I use this command to add newly created files or recent file changes to a stagin
 
 There are 2 ways to add all files to the staging area:
 
-a) **Git add —all**
+#### a) Git add —all
 
 Since I started working on a [monorepo](https://en.wikipedia.org/wiki/Monorepo#:~:text=In%20version%20control%20systems%2C%20a,as%20a%20'shared%20codebase'.), I use `git add --all` to add all files I have made changes to no matter the project directory.
 
-b) **Git add .**
+#### b) Git add .
 
 I use `git add .` to add all files I have updated in the project directory.
 
@@ -124,7 +124,7 @@ git checkout <branch name>
 
 ![git-checkout](/posts-images/git-commands/git-checkout.png)
 
-**Git checkout -b**
+#### Git checkout -b
 
 This creates a new branch from an existing branch and  automatically switches to the new branch.
 ```
@@ -205,7 +205,7 @@ I use this when I want to undo a commit to a certain commit in a file. You can u
 git reset head <commit hash>
 ```
 
-## Notable mentions from Developer friends of their most-used commands
+## Notable mentions from Developer friends of their most used git commands
 
 - git rm -cached flag
 - git stash
