@@ -10,7 +10,7 @@ url: '/my-most-used-git-commands'
 
 In this article, I share git commands I find myself using most often in my day-to-day job as a Software Developer. I ran a survey among my Dev friends to find out their most used git commands, and the list is pretty similar except for 1 or 2 git command differences.
 
-First I will list out my most used git commands, then a small list of the git commands I use quite a bit but not as regularly.For each of the commands, I will give a brief example of how it can be used. Lastly, I added a list of git commands mentioned by Developer friends as their most used commands.
+First I will list out my most used git commands, then a small list of the git commands I use quite a bit but not as regularly. For each of the commands, I will give a brief example of how it can be used. Lastly, I added a list of git commands mentioned by Developer friends as their most used commands.
 
 ## My Most used git command list with examples
 
@@ -25,7 +25,7 @@ First I will list out my most used git commands, then a small list of the git co
 
 ### Git Status
 
-I use this command to check how many files have been changed and have not been committed.
+I use **git status command** to check how many files have been changed and have not been committed.
 
 ```
 git status
@@ -87,11 +87,11 @@ This is the same as the command above, but it opens up a vim editor where you ca
 
 ![git-commit](/posts-images/git-commands/git-commit.png)
 
->  if you want to use the git commit command, learn how to use a to write a message, save and quit the vim editor.Or you can change your git editor of choice to Nano, 
+>  if you want to use the git commit command, learn how to use a to write a message, save and quit the vim editor.Or you can change your git editor of choice to Nano.
 
 ### Git Push
 
-I use this to send locally committed changes to the GitHub remote branch. This ensures that the branch on the remote repository contains all the updates made on the local branch.
+I use **git push command** to send locally committed changes to the GitHub remote branch. This ensures that the branch on the remote repository contains all the updates made on the local branch.
 
 ```
 git push
@@ -134,9 +134,9 @@ git checkout -b <branch name>
 
 ### Git Merge
 
-I use **git merge** for updating commits present in the parent branch(dev or main ) with my working branch. For example, A colleague worked on a feature branch named `add-navigation`, which has been merged into the **main branch**.
+I use this command for updating commits present in the parent branch(dev or main ) with my working branch. For example, A colleague worked on a feature branch named `add-navigation`, which has been merged into the `main branch`.
 
-If I want my feature branch to have the same updates as the **main branch**, I use git merge to transfer commits present in the main branch to the feature branch I’m working on.
+If I want my `feature branch` to have the same updates as the `main branch`, I use **git merge** to transfer commits present in the `main branch` to the feature branch I’m working on.
 
  #### How to merge a feature branch into the main branch
 
@@ -152,14 +152,14 @@ git merge <branch name>
 
 #### How to merge the main branch into a feature branch
 
-**git merge** can be used to merge branches in the opposite direction too. When I finish working on a feature branch, I use git merge to add the work done on my feature branch to the main branch.
+**git merge** can be used to merge branches in the opposite direction too. When I finish working on a feature branch, I use **git merge** to add the work done on my `feature branch` to the `main branch`.
 
-Make sure the **local main** is up to date with the **remote main branch**.
+Make sure the `local main` is up to date with the `remote main branch`.
 
 ```
 git pull
 ```
-checkout to the feature branch and run the git merge command.
+checkout to the `feature branch` and run the git merge command.
 
 ```
 git checkout <feature-branch>
@@ -199,7 +199,7 @@ git branch -d
 
 ### git reset head
 
-I use this when I want to undo a commit to a certain commit in a file. You can use **git --oneline** to get the short version of the commit hash you want code to reset to.
+I use this command when I want to undo a commit to a certain commit in a file. You can use **git --oneline** to get the short version of the commit hash you want code to reset to.
 
 ```
 git reset head <commit hash>
@@ -215,7 +215,7 @@ git reset head <commit hash>
 
 ### git rm --cached flag
 
-**git rm --cached** command remove files from your local git repository. The --cached flag deletes the file from your git repository, it becomes an untracked file in your project folder. Note you have to commit the changes.
+**git rm --cached** command remove files from your local git repository. The **--cached flag** deletes the file from your git repository, it becomes an untracked file in your project folder. Note you have to commit the changes.
 
 ```
 git rm <file Relative path> --cached
@@ -225,8 +225,8 @@ git rm <file Relative path> --cached
 
 ### git stash
 
-Say you are working on a feature branch file and you need to work on something else but don’t want to commit the changes just yet.
-You use a git stash command to save the changes temporarily without having to commit them. This lets you switch between branches and back to your working feature branch, easily retrieve the stashed changes and continue working on it.
+Say you are working on a `feature branch` and you need to work on something else but don’t want to commit the changes just yet.
+You use a **git stash** command to save the changes temporarily without having to commit them. This lets you switch between branches and back to your working `feature branch`, easily retrieve the stashed changes and continue working on it.
 
 ```
 git stash --include-untracked or git stash -u
@@ -237,8 +237,7 @@ git stash --include-untracked or git stash -u
 ### git cherry pick <commit hash >
 
 You use this command when you want to get a single commit from another branch into your working branch. Think of it like this, instead of using **git merge**
- to add all the commits from another branch into your working branch just to get one particular commit from that branch, you use git **cherry pick < commit hash >**
- to merge that particular commit into your branch.
+ to add all the commits from another branch into your working branch just to get one particular commit from that branch, you use git **cherry pick<commit hash>** to merge that particular commit into your branch.
 
 ```
 git cherrypick 0c2e231
