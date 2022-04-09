@@ -1,3 +1,4 @@
-# Agirl.codes
+## Agirl.codes
 
-## Personal Blog
+
+Welcome to my little corner of the web where I share articles on frontend development.
