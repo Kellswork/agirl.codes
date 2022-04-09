@@ -213,13 +213,15 @@ git reset head <commit hash>
 - git rebase
 
 
-### git rm -cached flag
+### git rm --cached flag
 
-**git rm —cached** command remove files from your local git repository. The —cached flag deletes the file from your git repository, it becomes an untracked file in your project folder. Note you have to commit the changes.
+**git rm --cached** command remove files from your local git repository. The --cached flag deletes the file from your git repository, it becomes an untracked file in your project folder. Note you have to commit the changes.
 
 ```
 git rm <file Relative path> --cached
 ```
+
+![git-rm-cached](/posts-images/git-commands/git-rm-cached.png)
 
 ### git stash
 
