@@ -9,6 +9,23 @@ import { PostTag } from '../components/PostList'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import Subscribe from '../components/Subscribe'
 
+const header = {
+  desktopView: {
+    h1: '2.5rem',
+    h2: '1.8rem',
+    h3: '1.5rem',
+    h4: '1.26rem',
+    h5: '1rem'
+  },
+  mobileView: {
+    h1: '1.8rem',
+    h2: '1.6rem',
+    h3: '1.4rem',
+    h4: '1.26rem',
+    h5: '1.125rem'
+  }
+}
+
 const MainDiv = styled.div`
   max-width: 1024px;
   margin: 0 auto;
@@ -17,7 +34,7 @@ const MainDiv = styled.div`
 
   h1 {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: ${header.desktopView.h1};
     margin-left: 25%;
     box-sizing: border-box;
     max-width: 760px;
@@ -26,26 +43,38 @@ const MainDiv = styled.div`
     line-height: 1.2;
     padding-bottom: 16px;
     padding: 0px 10px 0px 10px;
+
     @media (max-width: 1040px) {
       margin: 0 auto;
     }
+
     @media (max-width: 760px) {
-      font-size: 1.8rem;
-      width: 94%;
+      font-size: ${header.mobileView.h1};
+      width: 90%;
       margin: 0 auto;
       line-height: 1.4;
     }
-    @media (max-width: 460px) {
-      font-size: 1.6rem;
-      width: 90%;
-      margin: 0 auto;
+  }
+
+  .markdown-content h2 {
+    margin-top: 30px;
+    font-size: ${header.desktopView.h2};
+    font-weight: 500;
+    line-height: 1.4;
+
+    @media (max-width: 760px) {
+      font-size: ${header.mobileView.h2};
     }
   }
+
   .markdown-content h3 {
-    @media (max-width: 400px) {
-      font-size: 1.2rem;
+    font-size: ${header.desktopView.h3};
+
+    @media (max-width: 460px) {
+      font-size: ${header.mobileView.h3};
     }
   }
+
   .markdown-content h4 {
     font-size: 1.2rem;
     font-weight: bold;
