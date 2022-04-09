@@ -127,11 +127,10 @@ git checkout <branch name>
 **Git checkout -b**
 
 This creates a new branch from an existing branch and  automatically switches to the new branch.
-
 ```
 git checkout -b <branch name>
 ```
-
+the main will be created from your current branch. Here, I'm in the main branch, so the new branch will be created from main branch.
 ### Git Merge
 
 I use **git merge** for updating commits present in the parent branch(dev or main ) with my working branch. For example, A colleague worked on a feature branch named `add-navigation`, which has been merged into the **main branch**.
