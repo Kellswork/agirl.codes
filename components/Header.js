@@ -92,7 +92,7 @@ export default function Header() {
               <div className="card-text">
                 <p>
                   Welcome to my little corner of the web where I share articles
-                  on frotend development.
+                  on frontend development.
                 </p>
               </div>
             </div>
