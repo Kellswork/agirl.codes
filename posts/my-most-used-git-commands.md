@@ -147,6 +147,9 @@ git checkout main
 git merge <branch name>
 ```
 
+![git-merge-main](/posts-images/git-commands/git-merge-main.png)
+
+
 #### How to merge the main branch into a feature branch
 
 **git merge** can be used to merge branches in the opposite direction too. When I finish working on a feature branch, I use git merge to add the work done on my feature branch to the main branch.
