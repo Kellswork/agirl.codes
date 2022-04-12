@@ -13,14 +13,21 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: '#0070f3',
-  },
+    primary: '#0070f3'
+  }
 }
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5QKRS"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+          }}
+        />
+      </GlobalStyle>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
