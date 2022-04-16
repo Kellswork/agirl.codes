@@ -8,7 +8,7 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `
 
-export default function Home({ posts, title, description, ...props }) {
+export default function Home({ posts, title, description, image, ...props }) {
   return (
     <Layout pageTitle={title} pageDescription={description} pageImage={image}>
       <main>

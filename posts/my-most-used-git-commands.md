@@ -254,7 +254,6 @@ More Information on the [difference between merge and rebase](https://www.atlass
 
 It was fun learning about what git commands fellow developers mostly use day-to-day job. Apparently we share almost the same list, with a sprinkle of a few command differences.
 
-<!-- Do share your most used git command list with me on medium(add link to post on medium) -->
 
 
 *Articles you might find helpful*
