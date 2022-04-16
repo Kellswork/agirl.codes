@@ -46,6 +46,7 @@ export default function Layout({
   children,
   pageTitle,
   pageDescription,
+  pageImage,
   ...props
 }) {
   return (
@@ -68,11 +69,19 @@ export default function Layout({
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content="agirl.codes" />
+        <meta
+          property="og:image"
+          content={`https://www.agirl.codes${pageImage}`}
+        />
+        <meta property="og:url" content="https://www.agirl.codes" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:site" content="@kelly_perrie" />
+        <meta name="twitter:site" content="https://www.agirl.codes" />
+        <meta
+          name="twitter:image"
+          content={`https://www.agirl.codes${pageImage}`}
+        />
         <meta name="twitter:creator" content="@kelly_perrie" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.agirl.codes" />
