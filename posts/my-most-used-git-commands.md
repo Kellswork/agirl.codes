@@ -4,7 +4,7 @@ date: 08-04-2022
 fullDate: Friday, 8 April 2022
 tags: Git
 description: 'I share git commands I find myself using most often in my day-to-day job as a Software Developer'
-image: ''
+image: '/post-images/git-commands/my-most-used-git-commands.jpg'
 url: '/my-most-used-git-commands'
 ---
 
@@ -87,11 +87,11 @@ This is the same as the command above, but it opens up a vim editor where you ca
 
 ![git-commit](/posts-images/git-commands/git-commit.png)
 
->  if you want to use the git commit command, learn how to use a to write a message, save and quit the vim editor.Or you can change your git editor of choice to Nano.
+>  If you want to use the git commit command, learn how to use a to write a message, save and quit the vim editor. Or you can change your git editor of choice to Nano.
 
 ### Git Push
 
-I use **git push command** to send locally committed changes to the GitHub remote branch. This ensures that the branch on the remote repository contains all the updates made on the local branch.
+I use the **git push command** to send locally committed changes to the GitHub remote branch. This ensures that the branch on the remote repository contains all the updates made on the local branch.
 
 ```
 git push
@@ -99,7 +99,7 @@ git push
 
 ![git-push](/posts-images/git-commands/git-push.png)
 
-For newly created local branch, this command is used to set up a remote branch with the same name as the local branch.
+For a newly created local branch, this command is used to set up a remote branch with the same name as the local branch.
 
 ```
 git push -u origin <branch_name>
@@ -112,8 +112,11 @@ git push --set-upstream <remote> <branch_name>
 
 ### Git Pull
 
-I use **git pull command** to keep my git local repositories content up-to-date with what is currently in the remote repository.
+I use the **git pull command** to keep my git local repositories content up-to-date with what is currently in the remote repository.
 
+```
+git pull
+```
 ### Git checkout
 
 I use this to switch branches.
@@ -136,7 +139,7 @@ git checkout -b <branch name>
 
 I use this command for updating commits present in the parent branch(dev or main ) with my working branch. For example, A colleague worked on a feature branch named `add-navigation`, which has been merged into the `main branch`.
 
-If I want my `feature branch` to have the same updates as the `main branch`, I use **git merge** to transfer commits present in the `main branch` to the feature branch I’m working on.
+If I want my `feature branch` to have the same updates as the `main branch`, I use **git merge** to transfer commits present in the `main branch` to the feature branch that I am working on.
 
  #### How to merge a feature branch into the main branch
 
@@ -199,13 +202,15 @@ git branch -d
 
 ### git reset head
 
-I use this command when I want to undo a commit to a certain commit in a file. You can use **git --oneline** to get the short version of the commit hash you want code to reset to.
+I use this command when I want to undo a commit to a certain commit in a file. You can use **git --oneline** to get the short version of the commit hash you want the code to reset to.
 
 ```
 git reset head <commit hash>
 ```
 
 ## Notable mentions from Developer friends of their most used git commands
+
+These are some of the commands I found from Dev friends that are different from my most often used commands.
 
 - git rm -cached flag
 - git stash
@@ -226,7 +231,7 @@ git rm <file Relative path> --cached
 ### git stash
 
 Say you are working on a `feature branch` and you need to work on something else but don’t want to commit the changes just yet.
-You use a **git stash** command to save the changes temporarily without having to commit them. This lets you switch between branches and back to your working `feature branch`, easily retrieve the stashed changes and continue working on it.
+You use a **git stash** command to save the changes temporarily without having to commit them. This lets you switch between branches and back to your  `feature branch`, easily retrieve the stashed changes and continue working on it.
 
 ```
 git stash --include-untracked or git stash -u
@@ -250,9 +255,11 @@ git cherrypick 0c2e231
 More Information on the [difference between merge and rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
 
+Do share your most used git command list with me on [medium]()
+
 ## Conclusion
 
-It was fun learning about what git commands fellow developers mostly use day-to-day job. Apparently we share almost the same list, with a sprinkle of a few command differences.
+It was fun learning about what git commands fellow developers mostly use in their day-to-day jobs. Apparently, we share almost the same list, with a sprinkle of a few command differences.
 
 
 
