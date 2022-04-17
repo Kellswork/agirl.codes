@@ -4,7 +4,7 @@ date: 08-04-2022
 fullDate: Friday, 8 April 2022
 tags: Git
 description: 'I share git commands I find myself using most often in my day-to-day job as a Software Developer'
-image: '/post-images/git-commands/my-most-used-git-commands.jpg'
+image: '/posts-images/git-commands/my-most-used-git-commands.jpg'
 url: '/my-most-used-git-commands'
 ---
 
