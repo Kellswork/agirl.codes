@@ -255,7 +255,7 @@ git cherrypick 0c2e231
 More Information on the [difference between merge and rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
 
-Do share your most used git command list with me on [medium]()
+Do share your most used git command list with me on [medium](https://agirlcodes.medium.com/my-most-used-git-commands-ff031b2c77c4)
 
 ## Conclusion
 
