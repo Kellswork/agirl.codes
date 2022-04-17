@@ -3,7 +3,7 @@ title: 'How to Build Forms with Multiple Input Fields using React Hooks'
 date: 22-11-2020
 fullDate: Sunday, 22 November 2020
 tags: React
-image: ../../posts-images/signup-form.png
+image: '/posts-images/signup-form.png'
 description: 'In this article, I will show you how to use React Hook to build forms with multiple input fields.'
 url: '/how-to-build-forms-with-multiple-input-fields-using-react-hooks'
 ---
