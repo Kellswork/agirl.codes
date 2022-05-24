@@ -1,5 +1,6 @@
 {
     "title": "agirl.codes",
     "description": "Welcome to my little corner of the web where I share articles on frontend development. Written by Kelechi Ogbonna, Frontend Developer",
-    "image": "/agirlcodes.jpg"
+    "image": "/agirlcodes.jpg",
+    "email":" agirl.codes@gmail.com"
 }
