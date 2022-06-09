@@ -1,10 +1,10 @@
 ---
-title: 'How to sort Next.js blog posts by date'
+title: 'How to sort next.js blog posts by date'
 date: 09-06-2022
 fullDate: Thursday, 9 June 2022
 tags: NextJS
 description: 'In this article, I share how to sort your blog posts by the most recent date'
-image: ''
+image: '/posts-images/sort-blog-post-by-date.png'
 url: '/sort-nextjs-blog-posts-by-date'
 ---
 
@@ -29,6 +29,7 @@ npm install Luxon
 ```
 
 import it into the component file that renders your blog post list.
+
 `/components/postList/postList.js`
 ```jsx
 import { dateTime } from 'Luxon'
@@ -58,7 +59,7 @@ With this date format mm-dd-yyyy, the post list  will be sorted by the most rece
 
 ### Order blog post by most recent date
 
-Now that the date string is has been converted to a Javascript Date object, use the javascript built-in `sort` function to sort the blog posts in descending order.
+Now that the date string has been converted to a Javascript Date object, use the javascript built-in `sort` function to sort the blog posts in descending order.
 
 In the src folder, go to component displaying your blog post list, create a variable `sortBlogPostsByDatesort` and assign the sort function code to the variable
 
@@ -111,9 +112,9 @@ return (
 
 Your Blog post list should be sorted now, with the most recent post at the top of the list.
 
-Here's the final result
+Final Result!
 
-[Add image of your blog post]
+![Final result](/posts-images/sort-blog-post-by-date.png)
 
 *Articles you might find helpful*
 
