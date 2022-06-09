@@ -67,7 +67,7 @@ const PostData = styled.div`
 export default function PostList({ posts }) {
   if (posts === 'undefined') return null
 
-  const postDataSortByDate = posts.sort((a, b) => {
+  const sortBlogPostsByDate = posts.sort((a, b) => {
     const beforeDate = DateTime.fromFormat(a.frontmatter.date, 'm-d-yyyy')
     const afterDate = DateTime.fromFormat(b.frontmatter.date, 'm-d-yyyy')
     return afterDate - beforeDate
@@ -78,7 +78,7 @@ export default function PostList({ posts }) {
       {!posts && <div>No posts!</div>}
 
       {posts &&
-        postDataSortByDate.map((post) => {
+        sortBlogPostsByDate.map((post) => {
           return (
             <DivList key={post.slug}>
               <div className="post-image"></div>
