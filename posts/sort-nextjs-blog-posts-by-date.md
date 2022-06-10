@@ -11,12 +11,9 @@ url: '/sort-nextjs-blog-posts-by-date'
 Recently, I added a new article to my blog and quickly realised the blog post list was sorted alphabetically. I wanted the blog posts with the most recent date at the top instead of having the post sorted alphabetically. In this article, I share how to sort your blog posts by the most recent date.
 
 ### Convert the date string to a date object
-
-To sort the blog post by date, convert the date string variable to a Date Object.
-You can use **Luxon** to convert the date string into a Date object. Luxon is an npm library that simplifies working with dates and times in JavaScript.
-Every blog post has a date string included in the post’s Front Matter.
-
 To sort the blog post by date, we need to convert the date string variable to a Date Object.
+
+Every blog post has a date string included in the post’s Front Matter.
 
 Manually writing code that converts a date string to a Javascript Date object can be difficult and time-consuming, I used **Luxon** to simplify the process.
 
