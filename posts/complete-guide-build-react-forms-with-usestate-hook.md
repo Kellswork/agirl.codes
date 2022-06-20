@@ -353,7 +353,7 @@ Discuss on [Medium](https://medium.com/@agirlcodes/the-complete-guide-to-buildin
 
 *Articles you might find helpful*
 
-[Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefault.js)
+[Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
 
 [Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs).
 
