@@ -40,8 +40,8 @@ This clears the cache without running the test. Jest possible had the old snapsh
 
 Jest stores information in the cache to improve test performance, I suspect the merge with new data must have clashed with the cache data, thereby confusing Jest.
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
 
-[Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)
+- [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)

@@ -351,13 +351,13 @@ In this tutorial, I covered;
 Discuss on [Medium](https://medium.com/@agirlcodes/the-complete-guide-to-building-react-forms-with-usestate-hook-e3d282ff0025)
 
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
 
-[My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
 
-[Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
 
-[Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs).
+- [Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs).
 

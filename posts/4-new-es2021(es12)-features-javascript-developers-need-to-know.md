@@ -151,8 +151,8 @@ To get started using ES2021 features in your code, set up your project with Babe
 > [A link to setting up a Babel in your project](https://babeljs.io/setup#installation)
 
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
 
-[How to check if an object is empty](https://www.agirl.codes/my-most-used-git-commands).
+- [How to check if an object is empty](https://www.agirl.codes/my-most-used-git-commands).

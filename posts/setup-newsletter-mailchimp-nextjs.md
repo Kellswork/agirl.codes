@@ -244,10 +244,10 @@ To view the complete code, checkout out my blog source code on [GitHub](https://
 
 I hope this article was helpful. If you have any questions or comments, do share on [medium](https://medium.com/@agirlcodes/setup-a-newsletter-with-next-js-and-mailchimp-d9933cfd785e)
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
 
-[Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
 
-[The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
+- [The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)

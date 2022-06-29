@@ -100,14 +100,14 @@ Now that you understand how forms are built with React Hooks, you can choose to 
 For a more in-depth beginner guide on how to build forms with multiple input fields -  [The Complete Guide to Building React Forms with useState Hook](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
 
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
+- [The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
 
-[How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
 
-[Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
 
-[Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs).
+- [Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs).
 
-[My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).

@@ -110,8 +110,8 @@ _.isEmpty(myObject)
 ```
 
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
 
-[4 New ES2021(ES12) Features JavaScript Developers Need to Know'](https://www.agirl.codes/4-new-es2021(es12)-features-javascript-developers-need-to-know).
+- [4 New ES2021(ES12) Features JavaScript Developers Need to Know'](https://www.agirl.codes/4-new-es2021(es12)-features-javascript-developers-need-to-know).

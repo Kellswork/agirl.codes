@@ -86,7 +86,8 @@ export const PostDiv = styled.div`
         letter-spacing: 1.1px;
       }
       em {
-        font-style: italic;
+        font-weight: medium;
+        font-size: 20px;
         color: #93f;
       }
     }

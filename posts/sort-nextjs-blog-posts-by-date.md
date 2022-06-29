@@ -113,8 +113,8 @@ Final Result!
 
 ![Final result](/posts-images/sort-blog-post-by-date.png)
 
-*Articles you might find helpful*
+*Recommended Reads*
 
-[Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)
+- [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)
 
-[Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
