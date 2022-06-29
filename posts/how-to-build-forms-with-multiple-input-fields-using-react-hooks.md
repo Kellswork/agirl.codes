@@ -99,6 +99,7 @@ Now that you understand how forms are built with React Hooks, you can choose to 
 
 For a more in-depth beginner guide on how to build forms with multiple input fields -  [The Complete Guide to Building React Forms with useState Hook](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
 
+Discuss on [Medium](https://medium.com/nerd-for-tech/how-to-build-forms-with-multiple-input-fields-using-react-hooks-677da2b851aa)
 
 *Recommended Reads*
 

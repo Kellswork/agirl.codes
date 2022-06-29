@@ -113,6 +113,9 @@ Final Result!
 
 ![Final result](/posts-images/sort-blog-post-by-date.png)
 
+Discuss on [Medium](https://agirlcodes.medium.com/how-to-sort-next-js-blog-posts-by-date-1665b641842b)
+
+
 *Recommended Reads*
 
 - [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)

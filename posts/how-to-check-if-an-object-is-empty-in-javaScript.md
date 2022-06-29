@@ -109,6 +109,7 @@ _.isEmpty(myObject)
 // true
 ```
 
+Discuss on [Medium](https://agirlcodes.medium.com/how-to-check-if-an-object-is-empty-in-javascript-1916f041c49c)
 
 *Recommended Reads*
 

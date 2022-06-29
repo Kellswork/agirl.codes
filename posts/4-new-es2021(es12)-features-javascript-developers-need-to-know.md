@@ -150,6 +150,7 @@ To get started using ES2021 features in your code, set up your project with Babe
 
 > [A link to setting up a Babel in your project](https://babeljs.io/setup#installation)
 
+Discuss on [Medium](https://agirlcodes.medium.com/4-new-es2021-es12-features-javascript-developers-need-to-know-54964dc1a49d)
 
 *Recommended Reads*
 
