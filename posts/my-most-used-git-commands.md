@@ -263,7 +263,7 @@ Do share your most used git command list with me on [medium](https://agirlcodes.
 
 *Articles you might find helpful*
 
-For a quick overview of how to build forms with react hook, [check this article](https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks).
+[4 New ES2021(ES12) Features JavaScript Developers Need to Know'](https://www.agirl.codes/4-new-es2021(es12)-features-javascript-developers-need-to-know).
 
-[Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+[How to check if an object is empty](https://www.agirl.codes/my-most-used-git-commands).
 
