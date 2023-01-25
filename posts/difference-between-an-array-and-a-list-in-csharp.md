@@ -3,6 +3,7 @@ title: 'Difference Between an Array and a List in C#'
 date: 23-01-2023
 fullDate: Wednesday, 25 January 2022
 tags: C#
+image: '/posts-images/array-and-list.jpg'
 description: 'I share the difference between an array and a list in c sharp(C#). How to instantiate an array and a list, and when to use an Array vs a List.'
 url: '/difference-between-an-array-and-a-list-in-csharp'
 ---
