@@ -1,5 +1,1 @@
-/post/4-new-es2021(es12)-features-javascript-developers-need-to-know        /4-new-es2021(es12)-features-javascript-developers-need-to-know
-
-/post/how-to-build-forms-with-multiple-input-fields-using-react-hooks       /how-to-build-forms-with-multiple-input-fields-using-react-hooks
-
-/post/how-to-check-if-an-object-is-empty-in-javascript                      /how-to-check-if-an-object-is-empty-in-javascript
+/(.*) https://newdomain.dev/$1 301
