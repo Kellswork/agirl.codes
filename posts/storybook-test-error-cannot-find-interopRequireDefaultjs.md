@@ -45,6 +45,6 @@ Discuss on [Medium](https://agirlcodes.medium.com/how-to-solve-jest-storybook-te
 
 *Recommended Reads*
 
-- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirlcodes.dev/sort-nextjs-blog-posts-by-date)
 
-- [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)
+- [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirlcodes.dev/setup-newsletter-mailchimp-nextjs)

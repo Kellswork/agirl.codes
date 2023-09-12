@@ -12,7 +12,7 @@ In this tutorial, You'll learn how to build forms with one or more input fields 
 
 The project we will be building is a Contact form with three input fields for the contact's name, email, and phone number. when the form is submitted, the form data will be saved in a contacts state and passed to a contact list component, where it is rendered to the browser. 
 
-If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirl.codes/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused or for anyone who wants to refresh their knowledge on react building React forms with useState hook.
+If you want a quick overview of how to build forms with multiple input fields using react hook, you can view it [here](https://www.agirlcodes.dev/how-to-build-forms-with-multiple-input-fields-using-react-hooks). This article will beginner-focused or for anyone who wants to refresh their knowledge on react building React forms with useState hook.
 
 ### 1. Build a simple React form with multiple input fields
 
@@ -353,11 +353,11 @@ Discuss on [Medium](https://medium.com/@agirlcodes/the-complete-guide-to-buildin
 
 *Recommended Reads*
 
-- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirlcodes.dev/sort-nextjs-blog-posts-by-date)
 
-- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirlcodes.dev/my-most-used-git-commands).
 
-- [Find out how I solved this Jest storybook react test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react test error.](https://www.agirlcodes.dev/storybook-test-error-cannot-find-interopRequireDefaultjs)
 
-- [Setup a Newsletter with Next.js and Mailchimp](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs).
+- [Setup a Newsletter with Next.js and Mailchimp](https://www.agirlcodes.dev/setup-newsletter-mailchimp-nextjs).
 

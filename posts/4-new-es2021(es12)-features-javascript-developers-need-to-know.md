@@ -154,6 +154,6 @@ Discuss on [Medium](https://agirlcodes.medium.com/4-new-es2021-es12-features-jav
 
 *Recommended Reads*
 
-- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirl.codes.dev/my-most-used-git-commands).
 
-- [How to check if an object is empty](https://www.agirl.codes/my-most-used-git-commands).
+- [How to check if an object is empty](https://www.agirl.codes.dev/my-most-used-git-commands).

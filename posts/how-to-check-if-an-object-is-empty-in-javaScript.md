@@ -113,6 +113,6 @@ Discuss on [Medium](https://agirlcodes.medium.com/how-to-check-if-an-object-is-e
 
 *Recommended Reads*
 
-- [My Most used git commands](https://www.agirl.codes/my-most-used-git-commands).
+- [My Most used git commands](https://www.agirlcodes.dev/my-most-used-git-commands).
 
-- [4 New ES2021(ES12) Features JavaScript Developers Need to Know'](https://www.agirl.codes/4-new-es2021(es12)-features-javascript-developers-need-to-know).
+- [4 New ES2021(ES12) Features JavaScript Developers Need to Know'](https://www.agirlcodes.dev/4-new-es2021(es12)-features-javascript-developers-need-to-know).

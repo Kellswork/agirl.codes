@@ -118,6 +118,6 @@ Discuss on [Medium](https://agirlcodes.medium.com/how-to-sort-next-js-blog-posts
 
 *Recommended Reads*
 
-- [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirl.codes/setup-newsletter-mailchimp-nextjs)
+- [Setup a Newsletter with Next.js and Mailchimp.](https://www.agirlcodes.dev/setup-newsletter-mailchimp-nextjs)
 
-- [Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirlcodes.dev/storybook-test-error-cannot-find-interopRequireDefaultjs)

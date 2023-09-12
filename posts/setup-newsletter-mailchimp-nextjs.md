@@ -246,8 +246,8 @@ I hope this article was helpful. If you have any questions or comments, do share
 
 *Recommended Reads*
 
-- [How to sort next js blog posts by most recent post date.](https://www.agirl.codes/sort-nextjs-blog-posts-by-date)
+- [How to sort next js blog posts by most recent post date.](https://www.agirlcodes.dev/sort-nextjs-blog-posts-by-date)
 
-- [Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirl.codes/storybook-test-error-cannot-find-interopRequireDefaultjs)
+- [Find out how I solved this Jest storybook react interopRequireDefault.js test error.](https://www.agirlcodes.dev/storybook-test-error-cannot-find-interopRequireDefaultjs)
 
-- [The Complete Guide to Building React Forms with useState Hook.](https://www.agirl.codes/complete-guide-build-react-forms-with-usestate-hook)
+- [The Complete Guide to Building React Forms with useState Hook.](https://www.agirlcodes.dev/complete-guide-build-react-forms-with-usestate-hook)
