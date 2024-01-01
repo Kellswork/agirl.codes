@@ -1,11 +1,10 @@
 import axios from 'axios'
 
-export default async (req, res) => {
+export default subscribeHandler = async (req, res) => {
   const { email } = req.body
 
-  if (!email || !email.length) {
+  if (!email || !email.length)
     return res.status(400).json({ error: 'Email is required' })
-  }
 
   const API_KEY = process.env.MAILCHIMP_API_KEY
   const API_SERVER = process.env.MAILCHIMP_API_SERVER
@@ -38,10 +37,12 @@ export default async (req, res) => {
   }
 }
 
-// mailchimp add member to list: https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/
-//steps:
-// get mailchimp api key, audience id,
-// install axios and setup  post request using async
-// pass the data need ( data, options and url), make sure not to make any mistakes in the url and data
-// infact with any parameter being passed cause it could lead to an error message
-// move to componnents/subscribe
+// mailchimp add member to list api: https://mailchimp.com/developer/marketing/api/list-members/add-member-to-list/
+
+/*
+steps:
+ 1. get mailchimp api key, audience id,
+ 2. install axios and setup  post request using async
+ 3. pass the data need ( data, options and url), make sure not to make any mistakes in the url and data, infact with any parameter being passed cause it could lead to an error message
+ 4. move to components/subscribe
+*/

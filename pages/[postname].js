@@ -139,6 +139,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   return (
     <MainDiv pageTitle={`${siteTitle} | ${frontmatter.title}`}>
       <Head>
+      <meta name="google-site-verification" content="TRyIdg-ox1ry4K6kTCZXR9EkUE-naNQqdY0a-8EleMM" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

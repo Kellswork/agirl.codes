@@ -47,7 +47,6 @@ export default function Layout({
   pageTitle,
   pageDescription,
   pageImage,
-  ...props
 }) {
   return (
     <>
